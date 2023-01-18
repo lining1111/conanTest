@@ -1,0 +1,45 @@
+[settings]
+    arch=armv8
+    build_type=Release
+    compiler=gcc
+    compiler.libcxx=libstdc++11
+    compiler.version=7.3
+    os=Linux
+
+[requires]
+    fmt/9.Y.Z
+
+[options]
+
+
+[full_settings]
+    arch=armv8
+    build_type=Release
+    compiler=gcc
+    compiler.libcxx=libstdc++11
+    compiler.version=7.3
+    os=Linux
+
+[full_requires]
+    fmt/9.1.0:36c5ecd9dc0fe3aca80f3c2eea6cbe540e8bf2b5
+
+[full_options]
+    fmt:fPIC=True
+    fmt:header_only=False
+    fmt:shared=False
+    fmt:with_fmt_alias=False
+    fmt:with_os_api=True
+
+[recipe_hash]
+
+
+[env]
+    AR=aarch64-linux-gnu-ar
+    AS=aarch64-linux-gnu-as
+    CC=aarch64-linux-gnu-gcc
+    CHOST=aarch64-linux-gnu
+    CXX=aarch64-linux-gnu-g++
+    LD=aarch64-linux-gnu-ld
+    PATH=[/usr/local/arm64/gcc-linaro-7.3.1-2018.05-x86_64_aarch64-linux-gnu/bin]
+    RANLIB=aarch64-linux-gnu-ranlib
+    STRIP=aarch64-linux-gnu-strip
