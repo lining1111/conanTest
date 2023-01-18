@@ -5,6 +5,11 @@
 ###环境设置
     安装conan包管理器    
     pip install conan
+    增加shell环境变量
+    因为默认 conan是安装到用户的 .local/bin下的，不存在PATH内
+    sudo gedit sudo gedit /etc/bash.bashrc
+    在export PATH=$PATH: 可能有很多路径添加${HOME}/.local/bin
+    conan的文件都是用户的.conan文件夹下
     新建默认配置
     conan profile new default
     conan profile update settings.compiler.libcxx=libstdc++11 default
@@ -47,7 +52,10 @@
         [generators]
         cmake
 
-        在该目录下输入命令拉取相应的库并编译 -pr 是指定profile文件 --build 是指定库
-        conan install . -pr arm64 --build=fmt
+        在该目录下新建build 进入build输入命令拉取相应的库并编译 -pr 是指定profile文件 --build 是指定库
+        rm -rf * 清除上次的配置文件
+        conan install .. -pr arm64 --build=fmt
         
-    剩下的就是clion上的编译了
+        安装好的库可以通过 conan search fmt/9.1.0@查看具体情况
+        
+    剩下的就是clion上的编译了 编译的时候注意 File | Settings | Build, Execution, Deployment | CMake Profiles勾选相应的 enable profile

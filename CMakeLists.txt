@@ -4,7 +4,7 @@ project(conanTest)
 set(CMAKE_CXX_STANDARD 11)
 
 # 引入Conan的CMake
-include(./conan/conanbuildinfo.cmake)
+include(conan/build/conanbuildinfo.cmake)
 conan_basic_setup()
 
 

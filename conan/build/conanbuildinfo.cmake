@@ -38,9 +38,9 @@ endmacro()
 #################
 ###  FMT
 #################
-set(CONAN_FMT_ROOT "/home/lining/.conan/data/fmt/9.1.0/_/_/package/36c5ecd9dc0fe3aca80f3c2eea6cbe540e8bf2b5")
-set(CONAN_INCLUDE_DIRS_FMT "/home/lining/.conan/data/fmt/9.1.0/_/_/package/36c5ecd9dc0fe3aca80f3c2eea6cbe540e8bf2b5/include")
-set(CONAN_LIB_DIRS_FMT "/home/lining/.conan/data/fmt/9.1.0/_/_/package/36c5ecd9dc0fe3aca80f3c2eea6cbe540e8bf2b5/lib")
+set(CONAN_FMT_ROOT "/home/lining/.conan/data/fmt/9.1.0/_/_/package/db123017807f5c094e7ffe64463018510e127133")
+set(CONAN_INCLUDE_DIRS_FMT "/home/lining/.conan/data/fmt/9.1.0/_/_/package/db123017807f5c094e7ffe64463018510e127133/include")
+set(CONAN_LIB_DIRS_FMT "/home/lining/.conan/data/fmt/9.1.0/_/_/package/db123017807f5c094e7ffe64463018510e127133/lib")
 set(CONAN_BIN_DIRS_FMT )
 set(CONAN_RES_DIRS_FMT )
 set(CONAN_SRC_DIRS_FMT )
@@ -78,12 +78,14 @@ set(CONAN_LIBS_FMT ${CONAN_PKG_LIBS_FMT} ${CONAN_SYSTEM_LIBS_FMT} ${CONAN_FRAMEW
 set(CONAN_PACKAGE_NAME None)
 set(CONAN_PACKAGE_VERSION None)
 
-set(CONAN_SETTINGS_ARCH "armv8")
+set(CONAN_SETTINGS_ARCH "x86_64")
+set(CONAN_SETTINGS_ARCH_BUILD "x86_64")
 set(CONAN_SETTINGS_BUILD_TYPE "Release")
 set(CONAN_SETTINGS_COMPILER "gcc")
 set(CONAN_SETTINGS_COMPILER_LIBCXX "libstdc++11")
-set(CONAN_SETTINGS_COMPILER_VERSION "7.3")
+set(CONAN_SETTINGS_COMPILER_VERSION "9")
 set(CONAN_SETTINGS_OS "Linux")
+set(CONAN_SETTINGS_OS_BUILD "Linux")
 
 set(CONAN_DEPENDENCIES fmt)
 # Storing original command line args (CMake helper) flags
@@ -93,8 +95,8 @@ set(CONAN_CMD_SHARED_LINKER_FLAGS ${CONAN_SHARED_LINKER_FLAGS})
 set(CONAN_CMD_C_FLAGS ${CONAN_C_FLAGS})
 # Defining accumulated conan variables for all deps
 
-set(CONAN_INCLUDE_DIRS "/home/lining/.conan/data/fmt/9.1.0/_/_/package/36c5ecd9dc0fe3aca80f3c2eea6cbe540e8bf2b5/include" ${CONAN_INCLUDE_DIRS})
-set(CONAN_LIB_DIRS "/home/lining/.conan/data/fmt/9.1.0/_/_/package/36c5ecd9dc0fe3aca80f3c2eea6cbe540e8bf2b5/lib" ${CONAN_LIB_DIRS})
+set(CONAN_INCLUDE_DIRS "/home/lining/.conan/data/fmt/9.1.0/_/_/package/db123017807f5c094e7ffe64463018510e127133/include" ${CONAN_INCLUDE_DIRS})
+set(CONAN_LIB_DIRS "/home/lining/.conan/data/fmt/9.1.0/_/_/package/db123017807f5c094e7ffe64463018510e127133/lib" ${CONAN_LIB_DIRS})
 set(CONAN_BIN_DIRS  ${CONAN_BIN_DIRS})
 set(CONAN_RES_DIRS  ${CONAN_RES_DIRS})
 set(CONAN_FRAMEWORK_DIRS  ${CONAN_FRAMEWORK_DIRS})
