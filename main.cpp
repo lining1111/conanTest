@@ -1,5 +1,6 @@
 #include <iostream>
 #include "fmt/core.h"
+#include <opencv4/opencv2/opencv.hpp>
 
 int execute_command(const std::string &command, std::string *output = nullptr,
                     bool redirect_stderr = false) {
@@ -21,11 +22,14 @@ int execute_command(const std::string &command, std::string *output = nullptr,
     return pclose(pipe);
 }
 
+using namespace cv;
+
 int main() {
+    printf("%s\n", CV_VERSION);
     std::string shell_command = {" /etc/passwd"};
 
     std::string output;
-    if ((execute_command(fmt::format("cat {0} 2>/dev/null", shell_command),&output)) == 0) {
+    if ((execute_command(fmt::format("cat {0} 2>/dev/null", shell_command), &output)) == 0) {
         printf("%s\n", output.c_str());
     }
 

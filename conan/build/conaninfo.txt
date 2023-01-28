@@ -1,39 +1,352 @@
 [settings]
-    arch=x86_64
+    arch=armv8
+    arch_target=armv8
     build_type=Release
     compiler=gcc
     compiler.libcxx=libstdc++11
-    compiler.version=9
+    compiler.version=7.5
     os=Linux
+    os_target=Linux
 
 [requires]
     fmt/9.Y.Z
+    opencv/4.Y.Z
 
 [options]
 
 
 [full_settings]
-    arch=x86_64
+    arch=armv8
     arch_build=x86_64
+    arch_target=armv8
     build_type=Release
     compiler=gcc
     compiler.libcxx=libstdc++11
-    compiler.version=9
+    compiler.version=7.5
     os=Linux
     os_build=Linux
+    os_target=Linux
 
 [full_requires]
-    fmt/9.1.0:db123017807f5c094e7ffe64463018510e127133
+    ade/0.1.2a:8548d8fca6ceb9b52730acbcd1a582e65b4e2949
+    autoconf/2.71:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    automake/1.16.5:258f6f05ca54813b3d7180161753df7f9ccf7e1d
+    brotli/1.0.9:a97efd019d8aef6077597ef0646b45d4396431ce
+    bzip2/1.0.8:cabeb1de5247a4c5d1cf9d7828e9d7e74329024d
+    eigen/3.3.9:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
+    ffmpeg/4.4:d259fc9a97e2ef0120ba95154b586348ab35abe3
+    flac/1.3.3:0905b6d8a2e856d5a31df1a5cf82f0a017a449f8
+    fmt/9.1.0:f94a1e112ef744d4297a44697d6f80efe30ad006
+    freetype/2.12.1:7d2a455ff5983857e07a87cef5e2425b60d64952
+    imath/3.1.6:8548d8fca6ceb9b52730acbcd1a582e65b4e2949
+    jasper/4.0.0:b51af9ca95830013fa1b1ace2f386356afd7b15b
+    libalsa/1.2.7.2:b253da633a524e62573e7ef1e00d91a00b1bdc30
+    libcap/2.65:102fbb51a697085959ad9971131b6f4f0653f9b8
+    libfdk_aac/2.0.2:8548d8fca6ceb9b52730acbcd1a582e65b4e2949
+    libiconv/1.17:102fbb51a697085959ad9971131b6f4f0653f9b8
+    libjpeg/9e:102fbb51a697085959ad9971131b6f4f0653f9b8
+    libmp3lame/3.100:102fbb51a697085959ad9971131b6f4f0653f9b8
+    libpng/1.6.39:e1a249e5742d80655a57256a26c00862cd9cf6e7
+    libsndfile/1.0.31:f86d38b626ecf56e179bfa595cae437a704a2850
+    libtool/2.4.7:e78955a6bcf15c6a5bcd16fa363055923ac18270
+    libvpx/1.11.0:8548d8fca6ceb9b52730acbcd1a582e65b4e2949
+    libwebp/1.2.4:bb41b96d94e50b129036d8f91dcb1d4e8a7f936e
+    libx264/cci.20220602:bc356c46b0ec6b6b3d7bcaedf6fe3320bfed4ebb
+    libx265/3.4:8fcf03c35140306a20d0714067eae08aa1cad10b
+    ogg/1.3.5:102fbb51a697085959ad9971131b6f4f0653f9b8
+    opencv/4.5.5:1d295bd45f4b7acdf714b173e86b729c5a726b92
+    openexr/3.1.5:825dcaf6541968e005b973a7ca711f580af908ec
+    openh264/2.1.1:8548d8fca6ceb9b52730acbcd1a582e65b4e2949
+    openjpeg/2.5.0:102fbb51a697085959ad9971131b6f4f0653f9b8
+    openssl/1.1.1s:102fbb51a697085959ad9971131b6f4f0653f9b8
+    opus/1.3.1:102fbb51a697085959ad9971131b6f4f0653f9b8
+    protobuf/3.17.1:41c9b048634ee45f5c6d5f32f6517a383a4a6b13
+    pulseaudio/14.2:10d74aea002acc5f51763fe5b9e7dd40767cf762
+    quirc/1.1:a4b92bea25b3a7d813a5ec6d7d9878f823be2fc2
+    vorbis/1.3.7:41baed939ea74d40eb3e53fc514331592a472dec
+    xz_utils/5.2.5:102fbb51a697085959ad9971131b6f4f0653f9b8
+    zlib/1.2.13:102fbb51a697085959ad9971131b6f4f0653f9b8
 
 [full_options]
+    ade:fPIC=True
+    brotli:enable_debug=False
+    brotli:enable_log=False
+    brotli:enable_portable=False
+    brotli:enable_rbit=True
+    brotli:endianness=None
+    brotli:fPIC=True
+    brotli:shared=False
+    brotli:target_bits=None
+    bzip2:build_executable=True
+    bzip2:fPIC=True
+    bzip2:shared=False
+    eigen:MPL2_only=False
+    ffmpeg:avcodec=True
+    ffmpeg:avdevice=True
+    ffmpeg:avfilter=True
+    ffmpeg:avformat=True
+    ffmpeg:disable_all_bitstream_filters=False
+    ffmpeg:disable_all_decoders=False
+    ffmpeg:disable_all_demuxers=False
+    ffmpeg:disable_all_devices=False
+    ffmpeg:disable_all_encoders=False
+    ffmpeg:disable_all_filters=False
+    ffmpeg:disable_all_hardware_accelerators=False
+    ffmpeg:disable_all_input_devices=False
+    ffmpeg:disable_all_muxers=False
+    ffmpeg:disable_all_output_devices=False
+    ffmpeg:disable_all_parsers=False
+    ffmpeg:disable_all_protocols=False
+    ffmpeg:disable_bitstream_filters=None
+    ffmpeg:disable_decoders=None
+    ffmpeg:disable_demuxers=None
+    ffmpeg:disable_encoders=None
+    ffmpeg:disable_everything=False
+    ffmpeg:disable_filters=None
+    ffmpeg:disable_hardware_accelerators=None
+    ffmpeg:disable_input_devices=None
+    ffmpeg:disable_muxers=None
+    ffmpeg:disable_output_devices=None
+    ffmpeg:disable_parsers=None
+    ffmpeg:disable_protocols=None
+    ffmpeg:enable_bitstream_filters=None
+    ffmpeg:enable_decoders=None
+    ffmpeg:enable_demuxers=None
+    ffmpeg:enable_encoders=None
+    ffmpeg:enable_filters=None
+    ffmpeg:enable_hardware_accelerators=None
+    ffmpeg:enable_input_devices=None
+    ffmpeg:enable_muxers=None
+    ffmpeg:enable_output_devices=None
+    ffmpeg:enable_parsers=None
+    ffmpeg:enable_protocols=None
+    ffmpeg:fPIC=True
+    ffmpeg:postproc=True
+    ffmpeg:shared=False
+    ffmpeg:swresample=True
+    ffmpeg:swscale=True
+    ffmpeg:with_asm=False
+    ffmpeg:with_bzip2=True
+    ffmpeg:with_freetype=True
+    ffmpeg:with_libalsa=True
+    ffmpeg:with_libfdk_aac=True
+    ffmpeg:with_libiconv=True
+    ffmpeg:with_libmp3lame=True
+    ffmpeg:with_libvpx=True
+    ffmpeg:with_libwebp=True
+    ffmpeg:with_libx264=True
+    ffmpeg:with_libx265=True
+    ffmpeg:with_lzma=True
+    ffmpeg:with_openh264=True
+    ffmpeg:with_openjpeg=True
+    ffmpeg:with_opus=True
+    ffmpeg:with_programs=True
+    ffmpeg:with_pulse=True
+    ffmpeg:with_sdl=False
+    ffmpeg:with_ssl=openssl
+    ffmpeg:with_vaapi=False
+    ffmpeg:with_vdpau=False
+    ffmpeg:with_vorbis=True
+    ffmpeg:with_vulkan=False
+    ffmpeg:with_xcb=False
+    ffmpeg:with_zeromq=False
+    ffmpeg:with_zlib=True
+    flac:fPIC=True
+    flac:shared=False
     fmt:fPIC=True
     fmt:header_only=False
     fmt:shared=False
     fmt:with_fmt_alias=False
     fmt:with_os_api=True
+    freetype:fPIC=True
+    freetype:shared=False
+    freetype:subpixel=False
+    freetype:with_brotli=True
+    freetype:with_bzip2=True
+    freetype:with_png=True
+    freetype:with_zlib=True
+    imath:fPIC=True
+    imath:shared=False
+    jasper:fPIC=True
+    jasper:shared=False
+    jasper:with_libjpeg=libjpeg
+    libalsa:disable_python=True
+    libalsa:fPIC=True
+    libalsa:shared=False
+    libcap:fPIC=True
+    libcap:psx_syscals=False
+    libcap:shared=False
+    libfdk_aac:fPIC=True
+    libfdk_aac:shared=False
+    libiconv:fPIC=True
+    libiconv:shared=False
+    libjpeg:fPIC=True
+    libjpeg:shared=False
+    libmp3lame:fPIC=True
+    libmp3lame:shared=False
+    libpng:api_prefix=
+    libpng:fPIC=True
+    libpng:neon=True
+    libpng:shared=False
+    libsndfile:experimental=False
+    libsndfile:fPIC=True
+    libsndfile:programs=True
+    libsndfile:shared=False
+    libsndfile:with_alsa=False
+    libsndfile:with_external_libs=True
+    libtool:fPIC=True
+    libtool:shared=False
+    libvpx:fPIC=True
+    libvpx:shared=False
+    libwebp:near_lossless=True
+    libwebp:shared=True
+    libwebp:swap_16bit_csp=False
+    libwebp:with_simd=True
+    libx264:bit_depth=all
+    libx264:disable_asm=True
+    libx264:fPIC=True
+    libx264:shared=False
+    libx265:HDR10=False
+    libx265:SVG_HEVC_encoder=False
+    libx265:assembly=True
+    libx265:bit_depth=8
+    libx265:fPIC=True
+    libx265:shared=False
+    libx265:with_numa=False
+    ogg:fPIC=True
+    ogg:shared=False
+    opencv:contrib=False
+    opencv:cpu_baseline=None
+    opencv:cpu_dispatch=None
+    opencv:dnn=True
+    opencv:neon=True
+    opencv:nonfree=False
+    opencv:parallel=False
+    opencv:shared=True
+    opencv:with_ade=True
+    opencv:with_cuda=False
+    opencv:with_eigen=True
+    opencv:with_ffmpeg=True
+    opencv:with_gtk=False
+    opencv:with_imgcodec_hdr=False
+    opencv:with_imgcodec_pfm=False
+    opencv:with_imgcodec_pxm=False
+    opencv:with_imgcodec_sunraster=False
+    opencv:with_ipp=False
+    opencv:with_jpeg=libjpeg
+    opencv:with_jpeg2000=jasper
+    opencv:with_openexr=True
+    opencv:with_png=True
+    opencv:with_quirc=True
+    opencv:with_tiff=False
+    opencv:with_v4l=False
+    opencv:with_webp=False
+    openexr:fPIC=True
+    openexr:shared=False
+    openh264:fPIC=True
+    openh264:shared=False
+    openjpeg:build_codec=False
+    openjpeg:fPIC=True
+    openjpeg:shared=False
+    openssl:386=False
+    openssl:enable_weak_ssl_ciphers=False
+    openssl:fPIC=True
+    openssl:no_aria=False
+    openssl:no_asm=False
+    openssl:no_async=False
+    openssl:no_bf=False
+    openssl:no_blake2=False
+    openssl:no_camellia=False
+    openssl:no_cast=False
+    openssl:no_chacha=False
+    openssl:no_cms=False
+    openssl:no_comp=False
+    openssl:no_ct=False
+    openssl:no_deprecated=False
+    openssl:no_des=False
+    openssl:no_dgram=False
+    openssl:no_dh=False
+    openssl:no_dsa=False
+    openssl:no_dso=False
+    openssl:no_ec=False
+    openssl:no_ecdh=False
+    openssl:no_ecdsa=False
+    openssl:no_engine=False
+    openssl:no_filenames=False
+    openssl:no_gost=False
+    openssl:no_hmac=False
+    openssl:no_idea=False
+    openssl:no_md4=False
+    openssl:no_md5=False
+    openssl:no_mdc2=False
+    openssl:no_ocsp=False
+    openssl:no_pinshared=False
+    openssl:no_rc2=False
+    openssl:no_rfc3779=False
+    openssl:no_rmd160=False
+    openssl:no_rsa=False
+    openssl:no_seed=False
+    openssl:no_sha=False
+    openssl:no_sm2=False
+    openssl:no_sm3=False
+    openssl:no_sm4=False
+    openssl:no_sock=False
+    openssl:no_srp=False
+    openssl:no_srtp=False
+    openssl:no_sse2=False
+    openssl:no_ssl=False
+    openssl:no_ssl3=False
+    openssl:no_stdio=False
+    openssl:no_tests=False
+    openssl:no_threads=False
+    openssl:no_tls1=False
+    openssl:no_ts=False
+    openssl:no_whirlpool=False
+    openssl:openssldir=None
+    openssl:shared=False
+    opus:fPIC=True
+    opus:fixed_point=False
+    opus:shared=False
+    protobuf:debug_suffix=True
+    protobuf:fPIC=True
+    protobuf:lite=False
+    protobuf:shared=False
+    protobuf:with_rtti=True
+    protobuf:with_zlib=True
+    pulseaudio:fPIC=True
+    pulseaudio:shared=False
+    pulseaudio:with_alsa=True
+    pulseaudio:with_dbus=False
+    pulseaudio:with_glib=False
+    pulseaudio:with_openssl=True
+    pulseaudio:with_x11=False
+    quirc:fPIC=True
+    quirc:max_regions=254
+    quirc:shared=False
+    vorbis:fPIC=True
+    vorbis:shared=False
+    xz_utils:fPIC=True
+    xz_utils:shared=False
+    zlib:fPIC=True
+    zlib:shared=False
 
 [recipe_hash]
 
 
 [env]
-
+    AR=aarch64-linux-gnu-ar
+    AS=aarch64-linux-gnu-as
+    CC=aarch64-linux-gnu-gcc
+    CFLAGS=-fPIE -fPIC
+    CHOST=aarch64-linux-gnu
+    CONAN_CMAKE_FIND_ROOT_PATH_MODE_INCLUDE=ONLY
+    CONAN_CMAKE_FIND_ROOT_PATH_MODE_LIBRARY=ONLY
+    CONAN_CMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER
+    CXX=aarch64-linux-gnu-g++
+    CXXFLAGS=-fPIE -fPIC
+    LD=aarch64-linux-gnu-ld
+    PATH=[/usr/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin]
+    RANLIB=aarch64-linux-gnu-ranlib
+    STRIP=aarch64-linux-gnu-strip
+    env_var=value
+    host_alias=aarch64-linux-gnu

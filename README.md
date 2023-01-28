@@ -59,3 +59,38 @@
         安装好的库可以通过 conan search fmt/9.1.0@查看具体情况
         
     剩下的就是clion上的编译了 编译的时候注意 File | Settings | Build, Execution, Deployment | CMake Profiles勾选相应的 enable profile
+### opencv库 aarch64
+    修改ffmpeg内的export/conanfile.py
+    546行增加
+    if tools.get_env("STRIP"):
+        args.append("--strip={}".format(tools.get_env("STRIP")))
+    主要是为了生成ffmpeg执行文件的时候，修改strip值
+
+    修改libx264内的export/conanfile.py
+        26增加
+            "disable_asm": [True, False],
+        32增加
+            "disable_asm": True,
+        102增加
+            if self.options.disable_asm:
+                args.append("--disable-asm")
+        原因交叉编译链的as工具编译.S文件不支持x86的asm
+    
+    conanfile.txt
+        [requires]
+        fmt/9.1.0
+        opencv/4.5.5
+        [options]
+        opencv:shared=True
+        opencv:with_gtk=False
+        opencv:with_tiff=False
+        vulkan-loader:with_wsi_xlib=False
+        pulseaudio:with_x11=False
+        libx264:disable_asm=True
+        ffmpeg:with_asm=False
+        ffmpeg:with_vulkan=False
+        ffmpeg:with_xcb=False
+        ffmpeg:with_vaapi=False
+        ffmpeg:with_vdpau=False
+        [generators]
+        cmake

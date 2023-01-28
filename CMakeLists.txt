@@ -2,11 +2,17 @@ cmake_minimum_required(VERSION 3.19)
 project(conanTest)
 
 set(CMAKE_CXX_STANDARD 11)
-
 # 引入Conan的CMake
+set(CONAN_DISABLE_CHECK_COMPILER 1)
+if (${ARCH} STREQUAL "x64")
+    execute_process(COMMAND sh build_local.sh
+            WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/conan)
+else ()
+    execute_process(COMMAND sh build_aarch64.sh
+            WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/conan)
+endif ()
 include(conan/build/conanbuildinfo.cmake)
 conan_basic_setup()
-
 
 #重新定义当前目标的源文件的__FILE__宏
 function(redefine_file_macro targetname)
