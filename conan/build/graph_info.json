@@ -473,12 +473,12 @@
    "True"
   ],
   [
-   "libpng:neon",
-   "True"
-  ],
-  [
    "libpng:shared",
    "False"
+  ],
+  [
+   "libpng:sse",
+   "True"
   ],
   [
    "libsndfile:experimental",
@@ -513,12 +513,48 @@
    "False"
   ],
   [
+   "libvpx:avx",
+   "False"
+  ],
+  [
+   "libvpx:avx2",
+   "False"
+  ],
+  [
+   "libvpx:avx512",
+   "False"
+  ],
+  [
    "libvpx:fPIC",
+   "True"
+  ],
+  [
+   "libvpx:mmx",
    "True"
   ],
   [
    "libvpx:shared",
    "False"
+  ],
+  [
+   "libvpx:sse",
+   "True"
+  ],
+  [
+   "libvpx:sse2",
+   "True"
+  ],
+  [
+   "libvpx:sse3",
+   "True"
+  ],
+  [
+   "libvpx:sse4_1",
+   "True"
+  ],
+  [
+   "libvpx:ssse3",
+   "True"
   ],
   [
    "libwebp:near_lossless",
@@ -605,7 +641,7 @@
    "True"
   ],
   [
-   "opencv:neon",
+   "opencv:fPIC",
    "True"
   ],
   [
@@ -618,7 +654,7 @@
   ],
   [
    "opencv:shared",
-   "True"
+   "False"
   ],
   [
    "opencv:with_ade",

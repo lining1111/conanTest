@@ -13,6 +13,10 @@ else ()
 endif ()
 include(conan/build/conanbuildinfo.cmake)
 conan_basic_setup()
+#file(GLOB allCopyFiles  "conan/build/bin/*")
+#file(COPY ${allCopyFiles} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/lib FOLLOW_SYMLINK_CHAIN)
+#link_directories(${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/lib)
+set(CMAKE_CXX_FLAGS "-Wl,-rpath=lib")
 
 #重新定义当前目标的源文件的__FILE__宏
 function(redefine_file_macro targetname)
@@ -37,10 +41,6 @@ function(redefine_file_macro targetname)
     endforeach ()
 endfunction()
 
-#根据实际情况设置
-#set(ARCH x86)
-set(ARCH arm64)
 add_definitions(-D${ARCH})
-
 add_executable(conanTest main.cpp )
 target_link_libraries(conanTest ${CONAN_LIBS})
