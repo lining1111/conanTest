@@ -48,7 +48,7 @@
     libx264/cci.20220602:61e7d2f0ea66e72e5809c4cae8bf05cc637e2c12
     libx265/3.4:d7e8cad401f10c95b06f0c83a0945866a60a5b74
     ogg/1.3.5:c10a1a185befd155ccf9af892387d3946f445cf6
-    opencv/4.5.5:0cbcd3a5f2e4dd66b832b605f15845358e08f112
+    opencv/4.5.5:afb5e248d61d8547aa18f5629126c55997975c9b
     openexr/3.1.5:215584eaacfd766e95324caba46de89583020312
     openh264/2.1.1:4ee234385446b17e6b660b359445a070922ea8e1
     openjpeg/2.5.0:c10a1a185befd155ccf9af892387d3946f445cf6
@@ -222,10 +222,9 @@
     opencv:cpu_baseline=None
     opencv:cpu_dispatch=None
     opencv:dnn=True
-    opencv:fPIC=True
     opencv:nonfree=False
     opencv:parallel=False
-    opencv:shared=False
+    opencv:shared=True
     opencv:with_ade=True
     opencv:with_cuda=False
     opencv:with_eigen=True
@@ -337,4 +336,5 @@
 
 
 [env]
-
+    CFLAGS=-Wl,-rpath=./:./lib
+    CXXFLAGS=-Wl,-rpath=./:./lib

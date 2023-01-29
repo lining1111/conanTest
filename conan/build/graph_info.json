@@ -641,10 +641,6 @@
    "True"
   ],
   [
-   "opencv:fPIC",
-   "True"
-  ],
-  [
    "opencv:nonfree",
    "False"
   ],
@@ -654,7 +650,7 @@
   ],
   [
    "opencv:shared",
-   "False"
+   "True"
   ],
   [
    "opencv:with_ade",

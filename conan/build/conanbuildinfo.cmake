@@ -76,11 +76,11 @@ set(CONAN_LIBS_FMT ${CONAN_PKG_LIBS_FMT} ${CONAN_SYSTEM_LIBS_FMT} ${CONAN_FRAMEW
 #################
 ###  OPENCV
 #################
-set(CONAN_OPENCV_ROOT "/home/lining/.conan/data/opencv/4.5.5/_/_/package/0cbcd3a5f2e4dd66b832b605f15845358e08f112")
-set(CONAN_INCLUDE_DIRS_OPENCV "/home/lining/.conan/data/opencv/4.5.5/_/_/package/0cbcd3a5f2e4dd66b832b605f15845358e08f112/include"
-			"/home/lining/.conan/data/opencv/4.5.5/_/_/package/0cbcd3a5f2e4dd66b832b605f15845358e08f112/include/opencv4")
-set(CONAN_LIB_DIRS_OPENCV "/home/lining/.conan/data/opencv/4.5.5/_/_/package/0cbcd3a5f2e4dd66b832b605f15845358e08f112/lib")
-set(CONAN_BIN_DIRS_OPENCV "/home/lining/.conan/data/opencv/4.5.5/_/_/package/0cbcd3a5f2e4dd66b832b605f15845358e08f112/bin")
+set(CONAN_OPENCV_ROOT "/home/lining/.conan/data/opencv/4.5.5/_/_/package/afb5e248d61d8547aa18f5629126c55997975c9b")
+set(CONAN_INCLUDE_DIRS_OPENCV "/home/lining/.conan/data/opencv/4.5.5/_/_/package/afb5e248d61d8547aa18f5629126c55997975c9b/include"
+			"/home/lining/.conan/data/opencv/4.5.5/_/_/package/afb5e248d61d8547aa18f5629126c55997975c9b/include/opencv4")
+set(CONAN_LIB_DIRS_OPENCV "/home/lining/.conan/data/opencv/4.5.5/_/_/package/afb5e248d61d8547aa18f5629126c55997975c9b/lib")
+set(CONAN_BIN_DIRS_OPENCV "/home/lining/.conan/data/opencv/4.5.5/_/_/package/afb5e248d61d8547aa18f5629126c55997975c9b/bin")
 set(CONAN_RES_DIRS_OPENCV )
 set(CONAN_SRC_DIRS_OPENCV )
 set(CONAN_BUILD_DIRS_OPENCV )
@@ -1547,8 +1547,8 @@ set(CONAN_CMD_C_FLAGS ${CONAN_C_FLAGS})
 # Defining accumulated conan variables for all deps
 
 set(CONAN_INCLUDE_DIRS "/home/lining/.conan/data/fmt/9.1.0/_/_/package/b6f9663d9ecc8ae9fb08941ac73e4dc3cf0efc20/include"
-			"/home/lining/.conan/data/opencv/4.5.5/_/_/package/0cbcd3a5f2e4dd66b832b605f15845358e08f112/include"
-			"/home/lining/.conan/data/opencv/4.5.5/_/_/package/0cbcd3a5f2e4dd66b832b605f15845358e08f112/include/opencv4"
+			"/home/lining/.conan/data/opencv/4.5.5/_/_/package/afb5e248d61d8547aa18f5629126c55997975c9b/include"
+			"/home/lining/.conan/data/opencv/4.5.5/_/_/package/afb5e248d61d8547aa18f5629126c55997975c9b/include/opencv4"
 			"/home/lining/.conan/data/jasper/4.0.0/_/_/package/0aee789cf87e42758ca6f0f4fba157d9b855de63/include"
 			"/home/lining/.conan/data/openexr/3.1.5/_/_/package/215584eaacfd766e95324caba46de89583020312/include"
 			"/home/lining/.conan/data/openexr/3.1.5/_/_/package/215584eaacfd766e95324caba46de89583020312/include/OpenEXR"
@@ -1590,7 +1590,7 @@ set(CONAN_INCLUDE_DIRS "/home/lining/.conan/data/fmt/9.1.0/_/_/package/b6f9663d9
 			"/home/lining/.conan/data/flac/1.3.3/_/_/package/7e7a3fc77fdc1fe2d5168a2fb909798f80d3a6d4/include"
 			"/home/lining/.conan/data/ogg/1.3.5/_/_/package/c10a1a185befd155ccf9af892387d3946f445cf6/include" ${CONAN_INCLUDE_DIRS})
 set(CONAN_LIB_DIRS "/home/lining/.conan/data/fmt/9.1.0/_/_/package/b6f9663d9ecc8ae9fb08941ac73e4dc3cf0efc20/lib"
-			"/home/lining/.conan/data/opencv/4.5.5/_/_/package/0cbcd3a5f2e4dd66b832b605f15845358e08f112/lib"
+			"/home/lining/.conan/data/opencv/4.5.5/_/_/package/afb5e248d61d8547aa18f5629126c55997975c9b/lib"
 			"/home/lining/.conan/data/jasper/4.0.0/_/_/package/0aee789cf87e42758ca6f0f4fba157d9b855de63/lib"
 			"/home/lining/.conan/data/openexr/3.1.5/_/_/package/215584eaacfd766e95324caba46de89583020312/lib"
 			"/home/lining/.conan/data/ffmpeg/4.4/_/_/package/78004d9907d86a6433ffb2e74abb3c82c480d95b/lib"
@@ -1625,7 +1625,7 @@ set(CONAN_LIB_DIRS "/home/lining/.conan/data/fmt/9.1.0/_/_/package/b6f9663d9ecc8
 			"/home/lining/.conan/data/opus/1.3.1/_/_/package/c10a1a185befd155ccf9af892387d3946f445cf6/lib"
 			"/home/lining/.conan/data/flac/1.3.3/_/_/package/7e7a3fc77fdc1fe2d5168a2fb909798f80d3a6d4/lib"
 			"/home/lining/.conan/data/ogg/1.3.5/_/_/package/c10a1a185befd155ccf9af892387d3946f445cf6/lib" ${CONAN_LIB_DIRS})
-set(CONAN_BIN_DIRS "/home/lining/.conan/data/opencv/4.5.5/_/_/package/0cbcd3a5f2e4dd66b832b605f15845358e08f112/bin"
+set(CONAN_BIN_DIRS "/home/lining/.conan/data/opencv/4.5.5/_/_/package/afb5e248d61d8547aa18f5629126c55997975c9b/bin"
 			"/home/lining/.conan/data/openexr/3.1.5/_/_/package/215584eaacfd766e95324caba46de89583020312/bin"
 			"/home/lining/.conan/data/ffmpeg/4.4/_/_/package/78004d9907d86a6433ffb2e74abb3c82c480d95b/bin"
 			"/home/lining/.conan/data/protobuf/3.17.1/_/_/package/b346f1e22b7a904bc695c05bca811a2166a9ab5e/bin"

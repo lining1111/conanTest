@@ -12,11 +12,13 @@ else ()
             WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}/conan)
 endif ()
 include(conan/build/conanbuildinfo.cmake)
-conan_basic_setup()
-#file(GLOB allCopyFiles  "conan/build/bin/*")
-#file(COPY ${allCopyFiles} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/lib FOLLOW_SYMLINK_CHAIN)
-#link_directories(${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/lib)
-set(CMAKE_CXX_FLAGS "-Wl,-rpath=lib")
+set(CMAKE_C_FLAGS "-Wl,-rpath=./:./lib")
+set(CMAKE_CXX_FLAGS "-Wl,-rpath=./:./lib")
+conan_basic_setup(KEEP_RPATHS)
+file(GLOB allCopyFiles  "conan/build/bin/*")
+file(COPY ${allCopyFiles} DESTINATION ${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/lib FOLLOW_SYMLINK_CHAIN)
+link_directories(${CMAKE_RUNTIME_OUTPUT_DIRECTORY}/lib)
+
 
 #重新定义当前目标的源文件的__FILE__宏
 function(redefine_file_macro targetname)
