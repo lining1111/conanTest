@@ -1,9 +1,9 @@
 #include <iostream>
 #include "fmt/core.h"
-#include <opencv4/opencv2/opencv.hpp>
-#include<opencv2/core.hpp> /*包含库的核心功能*/
-#include<opencv2/imgproc.hpp> /*包括主要的图像处理函数*/
-#include<opencv2/highgui.hpp> /*提供了读写图像和视频的函数以及一些用户交互函数*/
+#include "opencv4/opencv2/opencv.hpp"
+#include "opencv2/core.hpp" /*包含库的核心功能*/
+#include <opencv2/imgproc.hpp> /*包括主要的图像处理函数*/
+#include <opencv2/highgui.hpp> /*提供了读写图像和视频的函数以及一些用户交互函数*/
 
 int execute_command(const std::string &command, std::string *output = nullptr,
                     bool redirect_stderr = false) {
@@ -26,14 +26,13 @@ int execute_command(const std::string &command, std::string *output = nullptr,
 }
 
 using namespace cv;
-Mat image_show(const char*image_path)
-{
+
+Mat image_show(const char *image_path) {
     //从文件中读入图像
     Mat img = imread(image_path, 1);
 
     //如果读入图像失败
-    if (img.empty())
-    {
+    if (img.empty()) {
         std::cerr << "Can not load image:" << image_path << std::endl;
         //fprintf(stderr, "Can not load image %s\n", image_path);
         abort();//异常退出

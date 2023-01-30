@@ -1,10 +1,12 @@
 [settings]
-    arch=x86_64
+    arch=armv8
+    arch_target=armv8
     build_type=Release
     compiler=gcc
     compiler.libcxx=libstdc++11
-    compiler.version=11.3
+    compiler.version=7.5
     os=Linux
+    os_target=Linux
 
 [requires]
     fmt/9.Y.Z
@@ -14,52 +16,56 @@
 
 
 [full_settings]
-    arch=x86_64
+    arch=armv8
+    arch_build=x86_64
+    arch_target=armv8
     build_type=Release
     compiler=gcc
     compiler.libcxx=libstdc++11
-    compiler.version=11.3
+    compiler.version=7.5
     os=Linux
+    os_build=Linux
+    os_target=Linux
 
 [full_requires]
-    ade/0.1.2a:4ee234385446b17e6b660b359445a070922ea8e1
+    ade/0.1.2a:8548d8fca6ceb9b52730acbcd1a582e65b4e2949
     autoconf/2.71:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
     automake/1.16.5:258f6f05ca54813b3d7180161753df7f9ccf7e1d
-    brotli/1.0.9:8d5a577c43816afeac746ec2711cd7ccf0bc29b4
-    bzip2/1.0.8:6948a9c9dff84f9925eadaddc56d1801a1945dc7
+    brotli/1.0.9:a97efd019d8aef6077597ef0646b45d4396431ce
+    bzip2/1.0.8:cabeb1de5247a4c5d1cf9d7828e9d7e74329024d
     eigen/3.3.9:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
-    ffmpeg/4.4:78004d9907d86a6433ffb2e74abb3c82c480d95b
-    flac/1.3.3:7e7a3fc77fdc1fe2d5168a2fb909798f80d3a6d4
-    fmt/9.1.0:b6f9663d9ecc8ae9fb08941ac73e4dc3cf0efc20
-    freetype/2.12.1:618977ab3b46ea4583c4fd930db1b7efe0f8f689
-    imath/3.1.6:4ee234385446b17e6b660b359445a070922ea8e1
-    jasper/4.0.0:0aee789cf87e42758ca6f0f4fba157d9b855de63
-    libalsa/1.2.7.2:4106c98435d952deb2629c0245baaa85a140f88d
-    libcap/2.65:c10a1a185befd155ccf9af892387d3946f445cf6
-    libfdk_aac/2.0.2:4ee234385446b17e6b660b359445a070922ea8e1
-    libiconv/1.17:c10a1a185befd155ccf9af892387d3946f445cf6
-    libjpeg/9e:c10a1a185befd155ccf9af892387d3946f445cf6
-    libmp3lame/3.100:c10a1a185befd155ccf9af892387d3946f445cf6
-    libpng/1.6.39:71574153f34f040a9ba21ca8b184a27729114d87
-    libsndfile/1.0.31:f82dd13658e310d502cc9288853ea0be89a0af6a
-    libtool/2.4.7:1f3b4f5ab48004264e29560e3e2f71863d383ab8
-    libvpx/1.11.0:13fd88ef5dfb52692b844858b8ae25a20d71e548
-    libwebp/1.2.4:0b6a3cd7e685353a30d36c43e485ad86db6dc500
-    libx264/cci.20220602:61e7d2f0ea66e72e5809c4cae8bf05cc637e2c12
-    libx265/3.4:d7e8cad401f10c95b06f0c83a0945866a60a5b74
-    ogg/1.3.5:c10a1a185befd155ccf9af892387d3946f445cf6
-    opencv/4.5.5:afb5e248d61d8547aa18f5629126c55997975c9b
-    openexr/3.1.5:215584eaacfd766e95324caba46de89583020312
-    openh264/2.1.1:4ee234385446b17e6b660b359445a070922ea8e1
-    openjpeg/2.5.0:c10a1a185befd155ccf9af892387d3946f445cf6
-    openssl/1.1.1s:c10a1a185befd155ccf9af892387d3946f445cf6
-    opus/1.3.1:c10a1a185befd155ccf9af892387d3946f445cf6
-    protobuf/3.17.1:b346f1e22b7a904bc695c05bca811a2166a9ab5e
-    pulseaudio/14.2:5a3b76e171e8730ab53d794aa35f459a7cc685c6
-    quirc/1.1:c94713f4d6cdbaabac039aa7208dd758bf1e0f51
-    vorbis/1.3.7:edd1011817fd7d7f23dde181963c0d6c3a77dfcf
-    xz_utils/5.2.5:c10a1a185befd155ccf9af892387d3946f445cf6
-    zlib/1.2.13:c10a1a185befd155ccf9af892387d3946f445cf6
+    ffmpeg/4.4:d259fc9a97e2ef0120ba95154b586348ab35abe3
+    flac/1.3.3:0905b6d8a2e856d5a31df1a5cf82f0a017a449f8
+    fmt/9.1.0:f94a1e112ef744d4297a44697d6f80efe30ad006
+    freetype/2.12.1:7d2a455ff5983857e07a87cef5e2425b60d64952
+    imath/3.1.6:8548d8fca6ceb9b52730acbcd1a582e65b4e2949
+    jasper/4.0.0:b51af9ca95830013fa1b1ace2f386356afd7b15b
+    libalsa/1.2.7.2:b253da633a524e62573e7ef1e00d91a00b1bdc30
+    libcap/2.65:102fbb51a697085959ad9971131b6f4f0653f9b8
+    libfdk_aac/2.0.2:8548d8fca6ceb9b52730acbcd1a582e65b4e2949
+    libiconv/1.17:102fbb51a697085959ad9971131b6f4f0653f9b8
+    libjpeg/9e:102fbb51a697085959ad9971131b6f4f0653f9b8
+    libmp3lame/3.100:102fbb51a697085959ad9971131b6f4f0653f9b8
+    libpng/1.6.39:e1a249e5742d80655a57256a26c00862cd9cf6e7
+    libsndfile/1.0.31:f86d38b626ecf56e179bfa595cae437a704a2850
+    libtool/2.4.7:e78955a6bcf15c6a5bcd16fa363055923ac18270
+    libvpx/1.11.0:8548d8fca6ceb9b52730acbcd1a582e65b4e2949
+    libwebp/1.2.4:bb41b96d94e50b129036d8f91dcb1d4e8a7f936e
+    libx264/cci.20220602:bc356c46b0ec6b6b3d7bcaedf6fe3320bfed4ebb
+    libx265/3.4:8fcf03c35140306a20d0714067eae08aa1cad10b
+    ogg/1.3.5:102fbb51a697085959ad9971131b6f4f0653f9b8
+    opencv/4.5.5:1d295bd45f4b7acdf714b173e86b729c5a726b92
+    openexr/3.1.5:825dcaf6541968e005b973a7ca711f580af908ec
+    openh264/2.1.1:8548d8fca6ceb9b52730acbcd1a582e65b4e2949
+    openjpeg/2.5.0:102fbb51a697085959ad9971131b6f4f0653f9b8
+    openssl/1.1.1s:102fbb51a697085959ad9971131b6f4f0653f9b8
+    opus/1.3.1:102fbb51a697085959ad9971131b6f4f0653f9b8
+    protobuf/3.17.1:41c9b048634ee45f5c6d5f32f6517a383a4a6b13
+    pulseaudio/14.2:10d74aea002acc5f51763fe5b9e7dd40767cf762
+    quirc/1.1:a4b92bea25b3a7d813a5ec6d7d9878f823be2fc2
+    vorbis/1.3.7:41baed939ea74d40eb3e53fc514331592a472dec
+    xz_utils/5.2.5:102fbb51a697085959ad9971131b6f4f0653f9b8
+    zlib/1.2.13:102fbb51a697085959ad9971131b6f4f0653f9b8
 
 [full_options]
     ade:fPIC=True
@@ -180,8 +186,8 @@
     libmp3lame:shared=False
     libpng:api_prefix=
     libpng:fPIC=True
+    libpng:neon=True
     libpng:shared=False
-    libpng:sse=True
     libsndfile:experimental=False
     libsndfile:fPIC=True
     libsndfile:programs=True
@@ -190,17 +196,8 @@
     libsndfile:with_external_libs=True
     libtool:fPIC=True
     libtool:shared=False
-    libvpx:avx=False
-    libvpx:avx2=False
-    libvpx:avx512=False
     libvpx:fPIC=True
-    libvpx:mmx=True
     libvpx:shared=False
-    libvpx:sse=True
-    libvpx:sse2=True
-    libvpx:sse3=True
-    libvpx:sse4_1=True
-    libvpx:ssse3=True
     libwebp:near_lossless=True
     libwebp:shared=True
     libwebp:swap_16bit_csp=False
@@ -222,6 +219,7 @@
     opencv:cpu_baseline=None
     opencv:cpu_dispatch=None
     opencv:dnn=True
+    opencv:neon=True
     opencv:nonfree=False
     opencv:parallel=False
     opencv:shared=True
@@ -336,5 +334,19 @@
 
 
 [env]
-    CFLAGS=-Wl,-rpath=./:./lib
-    CXXFLAGS=-Wl,-rpath=./:./lib
+    AR=aarch64-linux-gnu-ar
+    AS=aarch64-linux-gnu-as
+    CC=aarch64-linux-gnu-gcc
+    CFLAGS=-fPIE -fPIC -Wl,-rpath=./:./lib
+    CHOST=aarch64-linux-gnu
+    CONAN_CMAKE_FIND_ROOT_PATH_MODE_INCLUDE=ONLY
+    CONAN_CMAKE_FIND_ROOT_PATH_MODE_LIBRARY=ONLY
+    CONAN_CMAKE_FIND_ROOT_PATH_MODE_PROGRAM=NEVER
+    CXX=aarch64-linux-gnu-g++
+    CXXFLAGS=-fPIE -fPIC -Wl,-rpath=./:./lib
+    LD=aarch64-linux-gnu-ld
+    PATH=[/usr/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu/bin]
+    RANLIB=aarch64-linux-gnu-ranlib
+    STRIP=aarch64-linux-gnu-strip
+    env_var=value
+    host_alias=aarch64-linux-gnu
