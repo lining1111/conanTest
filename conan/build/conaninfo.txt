@@ -9,8 +9,10 @@
     os_target=Linux
 
 [requires]
+    cocoyaxi/2.Y.Z
     fmt/9.Y.Z
     opencv/4.Y.Z
+    openssl/1.Y.Z
 
 [options]
 
@@ -33,6 +35,7 @@
     automake/1.16.5:258f6f05ca54813b3d7180161753df7f9ccf7e1d
     brotli/1.0.9:a97efd019d8aef6077597ef0646b45d4396431ce
     bzip2/1.0.8:cabeb1de5247a4c5d1cf9d7828e9d7e74329024d
+    cocoyaxi/2.0.3:407f6a989894c56eed689cee9c4200bd3242d146
     eigen/3.3.9:5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9
     ffmpeg/4.4:d259fc9a97e2ef0120ba95154b586348ab35abe3
     flac/1.3.3:0905b6d8a2e856d5a31df1a5cf82f0a017a449f8
@@ -42,6 +45,7 @@
     jasper/4.0.0:b51af9ca95830013fa1b1ace2f386356afd7b15b
     libalsa/1.2.7.2:b253da633a524e62573e7ef1e00d91a00b1bdc30
     libcap/2.65:102fbb51a697085959ad9971131b6f4f0653f9b8
+    libcurl/7.80.0:ec07ffc6b9a13e2918f79000a98371cd6062b944
     libfdk_aac/2.0.2:8548d8fca6ceb9b52730acbcd1a582e65b4e2949
     libiconv/1.17:102fbb51a697085959ad9971131b6f4f0653f9b8
     libjpeg/9e:102fbb51a697085959ad9971131b6f4f0653f9b8
@@ -80,6 +84,10 @@
     bzip2:build_executable=True
     bzip2:fPIC=True
     bzip2:shared=False
+    cocoyaxi:fPIC=True
+    cocoyaxi:shared=False
+    cocoyaxi:with_libcurl=True
+    cocoyaxi:with_openssl=True
     eigen:MPL2_only=False
     ffmpeg:avcodec=True
     ffmpeg:avdevice=True
@@ -176,6 +184,48 @@
     libcap:fPIC=True
     libcap:psx_syscals=False
     libcap:shared=False
+    libcurl:fPIC=True
+    libcurl:shared=False
+    libcurl:with_brotli=False
+    libcurl:with_c_ares=False
+    libcurl:with_ca_bundle=auto
+    libcurl:with_ca_path=auto
+    libcurl:with_cookies=True
+    libcurl:with_crypto_auth=True
+    libcurl:with_dict=True
+    libcurl:with_docs=False
+    libcurl:with_file=True
+    libcurl:with_ftp=True
+    libcurl:with_gopher=True
+    libcurl:with_http=True
+    libcurl:with_imap=True
+    libcurl:with_ipv6=True
+    libcurl:with_largemaxwritesize=False
+    libcurl:with_ldap=False
+    libcurl:with_libgsasl=False
+    libcurl:with_libidn=False
+    libcurl:with_libpsl=False
+    libcurl:with_librtmp=False
+    libcurl:with_libssh2=False
+    libcurl:with_mqtt=True
+    libcurl:with_nghttp2=False
+    libcurl:with_ntlm=True
+    libcurl:with_ntlm_wb=True
+    libcurl:with_pop3=True
+    libcurl:with_proxy=True
+    libcurl:with_rtsp=True
+    libcurl:with_smb=True
+    libcurl:with_smtp=True
+    libcurl:with_ssl=openssl
+    libcurl:with_symbol_hiding=False
+    libcurl:with_telnet=True
+    libcurl:with_tftp=True
+    libcurl:with_threaded_resolver=True
+    libcurl:with_unix_sockets=True
+    libcurl:with_verbose_debug=True
+    libcurl:with_verbose_strings=True
+    libcurl:with_zlib=True
+    libcurl:with_zstd=False
     libfdk_aac:fPIC=True
     libfdk_aac:shared=False
     libiconv:fPIC=True

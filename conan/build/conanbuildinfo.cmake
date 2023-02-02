@@ -113,6 +113,44 @@ set(CONAN_LIBS_OPENCV ${CONAN_PKG_LIBS_OPENCV} ${CONAN_SYSTEM_LIBS_OPENCV} ${CON
 
 
 #################
+###  COCOYAXI
+#################
+set(CONAN_COCOYAXI_ROOT "/home/lining/.conan/data/cocoyaxi/2.0.3/_/_/package/407f6a989894c56eed689cee9c4200bd3242d146")
+set(CONAN_INCLUDE_DIRS_COCOYAXI "/home/lining/.conan/data/cocoyaxi/2.0.3/_/_/package/407f6a989894c56eed689cee9c4200bd3242d146/include")
+set(CONAN_LIB_DIRS_COCOYAXI "/home/lining/.conan/data/cocoyaxi/2.0.3/_/_/package/407f6a989894c56eed689cee9c4200bd3242d146/lib")
+set(CONAN_BIN_DIRS_COCOYAXI )
+set(CONAN_RES_DIRS_COCOYAXI )
+set(CONAN_SRC_DIRS_COCOYAXI )
+set(CONAN_BUILD_DIRS_COCOYAXI )
+set(CONAN_FRAMEWORK_DIRS_COCOYAXI )
+set(CONAN_LIBS_COCOYAXI co)
+set(CONAN_PKG_LIBS_COCOYAXI co)
+set(CONAN_SYSTEM_LIBS_COCOYAXI )
+set(CONAN_FRAMEWORKS_COCOYAXI )
+set(CONAN_FRAMEWORKS_FOUND_COCOYAXI "")  # Will be filled later
+set(CONAN_DEFINES_COCOYAXI )
+set(CONAN_BUILD_MODULES_PATHS_COCOYAXI )
+# COMPILE_DEFINITIONS are equal to CONAN_DEFINES without -D, for targets
+set(CONAN_COMPILE_DEFINITIONS_COCOYAXI )
+
+set(CONAN_C_FLAGS_COCOYAXI "")
+set(CONAN_CXX_FLAGS_COCOYAXI "")
+set(CONAN_SHARED_LINKER_FLAGS_COCOYAXI "")
+set(CONAN_EXE_LINKER_FLAGS_COCOYAXI "")
+
+# For modern cmake targets we use the list variables (separated with ;)
+set(CONAN_C_FLAGS_COCOYAXI_LIST "")
+set(CONAN_CXX_FLAGS_COCOYAXI_LIST "")
+set(CONAN_SHARED_LINKER_FLAGS_COCOYAXI_LIST "")
+set(CONAN_EXE_LINKER_FLAGS_COCOYAXI_LIST "")
+
+# Apple Frameworks
+conan_find_apple_frameworks(CONAN_FRAMEWORKS_FOUND_COCOYAXI "${CONAN_FRAMEWORKS_COCOYAXI}" "_COCOYAXI" "")
+# Append to aggregated values variable
+set(CONAN_LIBS_COCOYAXI ${CONAN_PKG_LIBS_COCOYAXI} ${CONAN_SYSTEM_LIBS_COCOYAXI} ${CONAN_FRAMEWORKS_FOUND_COCOYAXI})
+
+
+#################
 ###  JASPER
 #################
 set(CONAN_JASPER_ROOT "/home/lining/.conan/data/jasper/4.0.0/_/_/package/b51af9ca95830013fa1b1ace2f386356afd7b15b")
@@ -378,6 +416,44 @@ set(CONAN_EXE_LINKER_FLAGS_ADE_LIST "")
 conan_find_apple_frameworks(CONAN_FRAMEWORKS_FOUND_ADE "${CONAN_FRAMEWORKS_ADE}" "_ADE" "")
 # Append to aggregated values variable
 set(CONAN_LIBS_ADE ${CONAN_PKG_LIBS_ADE} ${CONAN_SYSTEM_LIBS_ADE} ${CONAN_FRAMEWORKS_FOUND_ADE})
+
+
+#################
+###  LIBCURL
+#################
+set(CONAN_LIBCURL_ROOT "/home/lining/.conan/data/libcurl/7.80.0/_/_/package/ec07ffc6b9a13e2918f79000a98371cd6062b944")
+set(CONAN_INCLUDE_DIRS_LIBCURL "/home/lining/.conan/data/libcurl/7.80.0/_/_/package/ec07ffc6b9a13e2918f79000a98371cd6062b944/include")
+set(CONAN_LIB_DIRS_LIBCURL "/home/lining/.conan/data/libcurl/7.80.0/_/_/package/ec07ffc6b9a13e2918f79000a98371cd6062b944/lib")
+set(CONAN_BIN_DIRS_LIBCURL "/home/lining/.conan/data/libcurl/7.80.0/_/_/package/ec07ffc6b9a13e2918f79000a98371cd6062b944/bin")
+set(CONAN_RES_DIRS_LIBCURL "/home/lining/.conan/data/libcurl/7.80.0/_/_/package/ec07ffc6b9a13e2918f79000a98371cd6062b944/res")
+set(CONAN_SRC_DIRS_LIBCURL )
+set(CONAN_BUILD_DIRS_LIBCURL )
+set(CONAN_FRAMEWORK_DIRS_LIBCURL )
+set(CONAN_LIBS_LIBCURL curl)
+set(CONAN_PKG_LIBS_LIBCURL curl)
+set(CONAN_SYSTEM_LIBS_LIBCURL rt pthread)
+set(CONAN_FRAMEWORKS_LIBCURL )
+set(CONAN_FRAMEWORKS_FOUND_LIBCURL "")  # Will be filled later
+set(CONAN_DEFINES_LIBCURL "-DCURL_STATICLIB=1")
+set(CONAN_BUILD_MODULES_PATHS_LIBCURL )
+# COMPILE_DEFINITIONS are equal to CONAN_DEFINES without -D, for targets
+set(CONAN_COMPILE_DEFINITIONS_LIBCURL "CURL_STATICLIB=1")
+
+set(CONAN_C_FLAGS_LIBCURL "")
+set(CONAN_CXX_FLAGS_LIBCURL "")
+set(CONAN_SHARED_LINKER_FLAGS_LIBCURL "")
+set(CONAN_EXE_LINKER_FLAGS_LIBCURL "")
+
+# For modern cmake targets we use the list variables (separated with ;)
+set(CONAN_C_FLAGS_LIBCURL_LIST "")
+set(CONAN_CXX_FLAGS_LIBCURL_LIST "")
+set(CONAN_SHARED_LINKER_FLAGS_LIBCURL_LIST "")
+set(CONAN_EXE_LINKER_FLAGS_LIBCURL_LIST "")
+
+# Apple Frameworks
+conan_find_apple_frameworks(CONAN_FRAMEWORKS_FOUND_LIBCURL "${CONAN_FRAMEWORKS_LIBCURL}" "_LIBCURL" "")
+# Append to aggregated values variable
+set(CONAN_LIBS_LIBCURL ${CONAN_PKG_LIBS_LIBCURL} ${CONAN_SYSTEM_LIBS_LIBCURL} ${CONAN_FRAMEWORKS_FOUND_LIBCURL})
 
 
 #################
@@ -1542,7 +1618,7 @@ set(CONAN_SETTINGS_OS "Linux")
 set(CONAN_SETTINGS_OS_BUILD "Linux")
 set(CONAN_SETTINGS_OS_TARGET "Linux")
 
-set(CONAN_DEPENDENCIES fmt opencv jasper openexr eigen ffmpeg quirc protobuf ade libjpeg imath xz_utils freetype openjpeg openh264 libx264 libx265 libvpx libmp3lame libfdk_aac libwebp pulseaudio libpng bzip2 libiconv brotli openssl libalsa libsndfile libcap libtool zlib vorbis opus flac automake ogg autoconf m4)
+set(CONAN_DEPENDENCIES fmt opencv cocoyaxi jasper openexr eigen ffmpeg quirc protobuf ade libcurl libjpeg imath xz_utils freetype openjpeg openh264 libx264 libx265 libvpx libmp3lame libfdk_aac libwebp pulseaudio libpng bzip2 libiconv brotli openssl libalsa libsndfile libcap libtool zlib vorbis opus flac automake ogg autoconf m4)
 # Storing original command line args (CMake helper) flags
 set(CONAN_CMD_CXX_FLAGS ${CONAN_CXX_FLAGS})
 
@@ -1553,6 +1629,7 @@ set(CONAN_CMD_C_FLAGS ${CONAN_C_FLAGS})
 set(CONAN_INCLUDE_DIRS "/home/lining/.conan/data/fmt/9.1.0/_/_/package/f94a1e112ef744d4297a44697d6f80efe30ad006/include"
 			"/home/lining/.conan/data/opencv/4.5.5/_/_/package/1d295bd45f4b7acdf714b173e86b729c5a726b92/include"
 			"/home/lining/.conan/data/opencv/4.5.5/_/_/package/1d295bd45f4b7acdf714b173e86b729c5a726b92/include/opencv4"
+			"/home/lining/.conan/data/cocoyaxi/2.0.3/_/_/package/407f6a989894c56eed689cee9c4200bd3242d146/include"
 			"/home/lining/.conan/data/jasper/4.0.0/_/_/package/b51af9ca95830013fa1b1ace2f386356afd7b15b/include"
 			"/home/lining/.conan/data/openexr/3.1.5/_/_/package/825dcaf6541968e005b973a7ca711f580af908ec/include"
 			"/home/lining/.conan/data/openexr/3.1.5/_/_/package/825dcaf6541968e005b973a7ca711f580af908ec/include/OpenEXR"
@@ -1561,6 +1638,7 @@ set(CONAN_INCLUDE_DIRS "/home/lining/.conan/data/fmt/9.1.0/_/_/package/f94a1e112
 			"/home/lining/.conan/data/quirc/1.1/_/_/package/a4b92bea25b3a7d813a5ec6d7d9878f823be2fc2/include"
 			"/home/lining/.conan/data/protobuf/3.17.1/_/_/package/41c9b048634ee45f5c6d5f32f6517a383a4a6b13/include"
 			"/home/lining/.conan/data/ade/0.1.2a/_/_/package/8548d8fca6ceb9b52730acbcd1a582e65b4e2949/include"
+			"/home/lining/.conan/data/libcurl/7.80.0/_/_/package/ec07ffc6b9a13e2918f79000a98371cd6062b944/include"
 			"/home/lining/.conan/data/libjpeg/9e/_/_/package/102fbb51a697085959ad9971131b6f4f0653f9b8/include"
 			"/home/lining/.conan/data/imath/3.1.6/_/_/package/8548d8fca6ceb9b52730acbcd1a582e65b4e2949/include"
 			"/home/lining/.conan/data/imath/3.1.6/_/_/package/8548d8fca6ceb9b52730acbcd1a582e65b4e2949/include/Imath"
@@ -1595,12 +1673,14 @@ set(CONAN_INCLUDE_DIRS "/home/lining/.conan/data/fmt/9.1.0/_/_/package/f94a1e112
 			"/home/lining/.conan/data/ogg/1.3.5/_/_/package/102fbb51a697085959ad9971131b6f4f0653f9b8/include" ${CONAN_INCLUDE_DIRS})
 set(CONAN_LIB_DIRS "/home/lining/.conan/data/fmt/9.1.0/_/_/package/f94a1e112ef744d4297a44697d6f80efe30ad006/lib"
 			"/home/lining/.conan/data/opencv/4.5.5/_/_/package/1d295bd45f4b7acdf714b173e86b729c5a726b92/lib"
+			"/home/lining/.conan/data/cocoyaxi/2.0.3/_/_/package/407f6a989894c56eed689cee9c4200bd3242d146/lib"
 			"/home/lining/.conan/data/jasper/4.0.0/_/_/package/b51af9ca95830013fa1b1ace2f386356afd7b15b/lib"
 			"/home/lining/.conan/data/openexr/3.1.5/_/_/package/825dcaf6541968e005b973a7ca711f580af908ec/lib"
 			"/home/lining/.conan/data/ffmpeg/4.4/_/_/package/d259fc9a97e2ef0120ba95154b586348ab35abe3/lib"
 			"/home/lining/.conan/data/quirc/1.1/_/_/package/a4b92bea25b3a7d813a5ec6d7d9878f823be2fc2/lib"
 			"/home/lining/.conan/data/protobuf/3.17.1/_/_/package/41c9b048634ee45f5c6d5f32f6517a383a4a6b13/lib"
 			"/home/lining/.conan/data/ade/0.1.2a/_/_/package/8548d8fca6ceb9b52730acbcd1a582e65b4e2949/lib"
+			"/home/lining/.conan/data/libcurl/7.80.0/_/_/package/ec07ffc6b9a13e2918f79000a98371cd6062b944/lib"
 			"/home/lining/.conan/data/libjpeg/9e/_/_/package/102fbb51a697085959ad9971131b6f4f0653f9b8/lib"
 			"/home/lining/.conan/data/imath/3.1.6/_/_/package/8548d8fca6ceb9b52730acbcd1a582e65b4e2949/lib"
 			"/home/lining/.conan/data/xz_utils/5.2.5/_/_/package/102fbb51a697085959ad9971131b6f4f0653f9b8/lib"
@@ -1633,6 +1713,7 @@ set(CONAN_BIN_DIRS "/home/lining/.conan/data/opencv/4.5.5/_/_/package/1d295bd45f
 			"/home/lining/.conan/data/openexr/3.1.5/_/_/package/825dcaf6541968e005b973a7ca711f580af908ec/bin"
 			"/home/lining/.conan/data/ffmpeg/4.4/_/_/package/d259fc9a97e2ef0120ba95154b586348ab35abe3/bin"
 			"/home/lining/.conan/data/protobuf/3.17.1/_/_/package/41c9b048634ee45f5c6d5f32f6517a383a4a6b13/bin"
+			"/home/lining/.conan/data/libcurl/7.80.0/_/_/package/ec07ffc6b9a13e2918f79000a98371cd6062b944/bin"
 			"/home/lining/.conan/data/xz_utils/5.2.5/_/_/package/102fbb51a697085959ad9971131b6f4f0653f9b8/bin"
 			"/home/lining/.conan/data/freetype/2.12.1/_/_/package/7d2a455ff5983857e07a87cef5e2425b60d64952/bin"
 			"/home/lining/.conan/data/pulseaudio/14.2/_/_/package/10d74aea002acc5f51763fe5b9e7dd40767cf762/bin"
@@ -1646,21 +1727,23 @@ set(CONAN_BIN_DIRS "/home/lining/.conan/data/opencv/4.5.5/_/_/package/1d295bd45f
 			"/home/lining/.conan/data/automake/1.16.5/_/_/package/258f6f05ca54813b3d7180161753df7f9ccf7e1d/bin"
 			"/home/lining/.conan/data/autoconf/2.71/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/bin"
 			"/home/lining/.conan/data/m4/1.4.19/_/_/package/1a032419479e0fe8660712050df2775c495d3123/bin" ${CONAN_BIN_DIRS})
-set(CONAN_RES_DIRS "/home/lining/.conan/data/libjpeg/9e/_/_/package/102fbb51a697085959ad9971131b6f4f0653f9b8/res"
+set(CONAN_RES_DIRS "/home/lining/.conan/data/libcurl/7.80.0/_/_/package/ec07ffc6b9a13e2918f79000a98371cd6062b944/res"
+			"/home/lining/.conan/data/libjpeg/9e/_/_/package/102fbb51a697085959ad9971131b6f4f0653f9b8/res"
 			"/home/lining/.conan/data/libalsa/1.2.7.2/_/_/package/b253da633a524e62573e7ef1e00d91a00b1bdc30/res"
 			"/home/lining/.conan/data/libtool/2.4.7/_/_/package/e78955a6bcf15c6a5bcd16fa363055923ac18270/res"
 			"/home/lining/.conan/data/automake/1.16.5/_/_/package/258f6f05ca54813b3d7180161753df7f9ccf7e1d/res"
 			"/home/lining/.conan/data/autoconf/2.71/_/_/package/5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9/res" ${CONAN_RES_DIRS})
 set(CONAN_FRAMEWORK_DIRS  ${CONAN_FRAMEWORK_DIRS})
-set(CONAN_LIBS fmt opencv_ml opencv_photo opencv_highgui opencv_videoio opencv_imgcodecs opencv_stitching opencv_dnn opencv_objdetect opencv_gapi opencv_video opencv_calib3d opencv_features2d opencv_flann opencv_imgproc opencv_core jasper OpenEXRUtil-3_1 OpenEXR-3_1 IlmThread-3_1 Iex-3_1 OpenEXRCore-3_1 avdevice avfilter avformat avcodec swscale swresample postproc avutil quirc protoc protobuf ade jpeg Imath-3_1 lzma freetype openjp2 openh264 x264 x265 vpx mp3lame fdk-aac webpdecoder webpdemux webpmux webp pulse-simple pulse pulsecommon-14.2 png bz2 iconv charset brotlidec-static brotlienc-static brotlicommon-static ssl crypto asound sndfile cap ltdl z vorbisenc vorbisfile vorbis opus FLAC++ FLAC ogg ${CONAN_LIBS})
-set(CONAN_PKG_LIBS fmt opencv_ml opencv_photo opencv_highgui opencv_videoio opencv_imgcodecs opencv_stitching opencv_dnn opencv_objdetect opencv_gapi opencv_video opencv_calib3d opencv_features2d opencv_flann opencv_imgproc opencv_core jasper OpenEXRUtil-3_1 OpenEXR-3_1 IlmThread-3_1 Iex-3_1 OpenEXRCore-3_1 avdevice avfilter avformat avcodec swscale swresample postproc avutil quirc protoc protobuf ade jpeg Imath-3_1 lzma freetype openjp2 openh264 x264 x265 vpx mp3lame fdk-aac webpdecoder webpdemux webpmux webp pulse-simple pulse pulsecommon-14.2 png bz2 iconv charset brotlidec-static brotlienc-static brotlicommon-static ssl crypto asound sndfile cap ltdl z vorbisenc vorbisfile vorbis opus FLAC++ FLAC ogg ${CONAN_PKG_LIBS})
+set(CONAN_LIBS fmt opencv_ml opencv_photo opencv_highgui opencv_videoio opencv_imgcodecs opencv_stitching opencv_dnn opencv_objdetect opencv_gapi opencv_video opencv_calib3d opencv_features2d opencv_flann opencv_imgproc opencv_core co jasper OpenEXRUtil-3_1 OpenEXR-3_1 IlmThread-3_1 Iex-3_1 OpenEXRCore-3_1 avdevice avfilter avformat avcodec swscale swresample postproc avutil quirc protoc protobuf ade curl jpeg Imath-3_1 lzma freetype openjp2 openh264 x264 x265 vpx mp3lame fdk-aac webpdecoder webpdemux webpmux webp pulse-simple pulse pulsecommon-14.2 png bz2 iconv charset brotlidec-static brotlienc-static brotlicommon-static ssl crypto asound sndfile cap ltdl z vorbisenc vorbisfile vorbis opus FLAC++ FLAC ogg ${CONAN_LIBS})
+set(CONAN_PKG_LIBS fmt opencv_ml opencv_photo opencv_highgui opencv_videoio opencv_imgcodecs opencv_stitching opencv_dnn opencv_objdetect opencv_gapi opencv_video opencv_calib3d opencv_features2d opencv_flann opencv_imgproc opencv_core co jasper OpenEXRUtil-3_1 OpenEXR-3_1 IlmThread-3_1 Iex-3_1 OpenEXRCore-3_1 avdevice avfilter avformat avcodec swscale swresample postproc avutil quirc protoc protobuf ade curl jpeg Imath-3_1 lzma freetype openjp2 openh264 x264 x265 vpx mp3lame fdk-aac webpdecoder webpdemux webpmux webp pulse-simple pulse pulsecommon-14.2 png bz2 iconv charset brotlidec-static brotlienc-static brotlicommon-static ssl crypto asound sndfile cap ltdl z vorbisenc vorbisfile vorbis opus FLAC++ FLAC ogg ${CONAN_PKG_LIBS})
 set(CONAN_SYSTEM_LIBS atomic stdc++ pthread rt dl m ${CONAN_SYSTEM_LIBS})
 set(CONAN_FRAMEWORKS  ${CONAN_FRAMEWORKS})
 set(CONAN_FRAMEWORKS_FOUND "")  # Will be filled later
 set(CONAN_DEFINES "-DFLAC__NO_DLL"
 			"-D_REENTRANT"
 			"-DLZMA_API_STATIC"
-			"-DLIBJPEG_STATIC" ${CONAN_DEFINES})
+			"-DLIBJPEG_STATIC"
+			"-DCURL_STATICLIB=1" ${CONAN_DEFINES})
 set(CONAN_BUILD_MODULES_PATHS  ${CONAN_BUILD_MODULES_PATHS})
 set(CONAN_CMAKE_MODULE_PATH "/home/lining/.conan/data/jasper/4.0.0/_/_/package/b51af9ca95830013fa1b1ace2f386356afd7b15b/"
 			"/home/lining/.conan/data/ffmpeg/4.4/_/_/package/d259fc9a97e2ef0120ba95154b586348ab35abe3/"
@@ -1848,6 +1931,76 @@ macro(conan_define_targets)
                                                                   $<$<CONFIG:RelWithDebInfo>:${CONAN_C_FLAGS_OPENCV_RELWITHDEBINFO_LIST} ${CONAN_CXX_FLAGS_OPENCV_RELWITHDEBINFO_LIST}>
                                                                   $<$<CONFIG:MinSizeRel>:${CONAN_C_FLAGS_OPENCV_MINSIZEREL_LIST} ${CONAN_CXX_FLAGS_OPENCV_MINSIZEREL_LIST}>
                                                                   $<$<CONFIG:Debug>:${CONAN_C_FLAGS_OPENCV_DEBUG_LIST}  ${CONAN_CXX_FLAGS_OPENCV_DEBUG_LIST}>)
+
+
+    set(_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES "${CONAN_SYSTEM_LIBS_COCOYAXI} ${CONAN_FRAMEWORKS_FOUND_COCOYAXI} CONAN_PKG::libcurl CONAN_PKG::openssl")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES "${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_COCOYAXI}" "${CONAN_LIB_DIRS_COCOYAXI}"
+                                  CONAN_PACKAGE_TARGETS_COCOYAXI "${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES}"
+                                  "" cocoyaxi)
+    set(_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_DEBUG "${CONAN_SYSTEM_LIBS_COCOYAXI_DEBUG} ${CONAN_FRAMEWORKS_FOUND_COCOYAXI_DEBUG} CONAN_PKG::libcurl CONAN_PKG::openssl")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_DEBUG "${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_DEBUG}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_COCOYAXI_DEBUG}" "${CONAN_LIB_DIRS_COCOYAXI_DEBUG}"
+                                  CONAN_PACKAGE_TARGETS_COCOYAXI_DEBUG "${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_DEBUG}"
+                                  "debug" cocoyaxi)
+    set(_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_RELEASE "${CONAN_SYSTEM_LIBS_COCOYAXI_RELEASE} ${CONAN_FRAMEWORKS_FOUND_COCOYAXI_RELEASE} CONAN_PKG::libcurl CONAN_PKG::openssl")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_RELEASE "${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_RELEASE}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_COCOYAXI_RELEASE}" "${CONAN_LIB_DIRS_COCOYAXI_RELEASE}"
+                                  CONAN_PACKAGE_TARGETS_COCOYAXI_RELEASE "${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_RELEASE}"
+                                  "release" cocoyaxi)
+    set(_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_RELWITHDEBINFO "${CONAN_SYSTEM_LIBS_COCOYAXI_RELWITHDEBINFO} ${CONAN_FRAMEWORKS_FOUND_COCOYAXI_RELWITHDEBINFO} CONAN_PKG::libcurl CONAN_PKG::openssl")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_RELWITHDEBINFO "${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_RELWITHDEBINFO}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_COCOYAXI_RELWITHDEBINFO}" "${CONAN_LIB_DIRS_COCOYAXI_RELWITHDEBINFO}"
+                                  CONAN_PACKAGE_TARGETS_COCOYAXI_RELWITHDEBINFO "${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_RELWITHDEBINFO}"
+                                  "relwithdebinfo" cocoyaxi)
+    set(_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_MINSIZEREL "${CONAN_SYSTEM_LIBS_COCOYAXI_MINSIZEREL} ${CONAN_FRAMEWORKS_FOUND_COCOYAXI_MINSIZEREL} CONAN_PKG::libcurl CONAN_PKG::openssl")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_MINSIZEREL "${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_MINSIZEREL}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_COCOYAXI_MINSIZEREL}" "${CONAN_LIB_DIRS_COCOYAXI_MINSIZEREL}"
+                                  CONAN_PACKAGE_TARGETS_COCOYAXI_MINSIZEREL "${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_MINSIZEREL}"
+                                  "minsizerel" cocoyaxi)
+
+    add_library(CONAN_PKG::cocoyaxi INTERFACE IMPORTED)
+
+    # Property INTERFACE_LINK_FLAGS do not work, necessary to add to INTERFACE_LINK_LIBRARIES
+    set_property(TARGET CONAN_PKG::cocoyaxi PROPERTY INTERFACE_LINK_LIBRARIES ${CONAN_PACKAGE_TARGETS_COCOYAXI} ${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_COCOYAXI_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_COCOYAXI_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_COCOYAXI_LIST}>
+
+                                                                 $<$<CONFIG:Release>:${CONAN_PACKAGE_TARGETS_COCOYAXI_RELEASE} ${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_RELEASE}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_COCOYAXI_RELEASE_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_COCOYAXI_RELEASE_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_COCOYAXI_RELEASE_LIST}>>
+
+                                                                 $<$<CONFIG:RelWithDebInfo>:${CONAN_PACKAGE_TARGETS_COCOYAXI_RELWITHDEBINFO} ${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_RELWITHDEBINFO}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_COCOYAXI_RELWITHDEBINFO_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_COCOYAXI_RELWITHDEBINFO_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_COCOYAXI_RELWITHDEBINFO_LIST}>>
+
+                                                                 $<$<CONFIG:MinSizeRel>:${CONAN_PACKAGE_TARGETS_COCOYAXI_MINSIZEREL} ${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_MINSIZEREL}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_COCOYAXI_MINSIZEREL_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_COCOYAXI_MINSIZEREL_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_COCOYAXI_MINSIZEREL_LIST}>>
+
+                                                                 $<$<CONFIG:Debug>:${CONAN_PACKAGE_TARGETS_COCOYAXI_DEBUG} ${_CONAN_PKG_LIBS_COCOYAXI_DEPENDENCIES_DEBUG}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_COCOYAXI_DEBUG_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_COCOYAXI_DEBUG_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_COCOYAXI_DEBUG_LIST}>>)
+    set_property(TARGET CONAN_PKG::cocoyaxi PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${CONAN_INCLUDE_DIRS_COCOYAXI}
+                                                                      $<$<CONFIG:Release>:${CONAN_INCLUDE_DIRS_COCOYAXI_RELEASE}>
+                                                                      $<$<CONFIG:RelWithDebInfo>:${CONAN_INCLUDE_DIRS_COCOYAXI_RELWITHDEBINFO}>
+                                                                      $<$<CONFIG:MinSizeRel>:${CONAN_INCLUDE_DIRS_COCOYAXI_MINSIZEREL}>
+                                                                      $<$<CONFIG:Debug>:${CONAN_INCLUDE_DIRS_COCOYAXI_DEBUG}>)
+    set_property(TARGET CONAN_PKG::cocoyaxi PROPERTY INTERFACE_COMPILE_DEFINITIONS ${CONAN_COMPILE_DEFINITIONS_COCOYAXI}
+                                                                      $<$<CONFIG:Release>:${CONAN_COMPILE_DEFINITIONS_COCOYAXI_RELEASE}>
+                                                                      $<$<CONFIG:RelWithDebInfo>:${CONAN_COMPILE_DEFINITIONS_COCOYAXI_RELWITHDEBINFO}>
+                                                                      $<$<CONFIG:MinSizeRel>:${CONAN_COMPILE_DEFINITIONS_COCOYAXI_MINSIZEREL}>
+                                                                      $<$<CONFIG:Debug>:${CONAN_COMPILE_DEFINITIONS_COCOYAXI_DEBUG}>)
+    set_property(TARGET CONAN_PKG::cocoyaxi PROPERTY INTERFACE_COMPILE_OPTIONS ${CONAN_C_FLAGS_COCOYAXI_LIST} ${CONAN_CXX_FLAGS_COCOYAXI_LIST}
+                                                                  $<$<CONFIG:Release>:${CONAN_C_FLAGS_COCOYAXI_RELEASE_LIST} ${CONAN_CXX_FLAGS_COCOYAXI_RELEASE_LIST}>
+                                                                  $<$<CONFIG:RelWithDebInfo>:${CONAN_C_FLAGS_COCOYAXI_RELWITHDEBINFO_LIST} ${CONAN_CXX_FLAGS_COCOYAXI_RELWITHDEBINFO_LIST}>
+                                                                  $<$<CONFIG:MinSizeRel>:${CONAN_C_FLAGS_COCOYAXI_MINSIZEREL_LIST} ${CONAN_CXX_FLAGS_COCOYAXI_MINSIZEREL_LIST}>
+                                                                  $<$<CONFIG:Debug>:${CONAN_C_FLAGS_COCOYAXI_DEBUG_LIST}  ${CONAN_CXX_FLAGS_COCOYAXI_DEBUG_LIST}>)
 
 
     set(_CONAN_PKG_LIBS_JASPER_DEPENDENCIES "${CONAN_SYSTEM_LIBS_JASPER} ${CONAN_FRAMEWORKS_FOUND_JASPER} CONAN_PKG::libjpeg")
@@ -2338,6 +2491,76 @@ macro(conan_define_targets)
                                                                   $<$<CONFIG:RelWithDebInfo>:${CONAN_C_FLAGS_ADE_RELWITHDEBINFO_LIST} ${CONAN_CXX_FLAGS_ADE_RELWITHDEBINFO_LIST}>
                                                                   $<$<CONFIG:MinSizeRel>:${CONAN_C_FLAGS_ADE_MINSIZEREL_LIST} ${CONAN_CXX_FLAGS_ADE_MINSIZEREL_LIST}>
                                                                   $<$<CONFIG:Debug>:${CONAN_C_FLAGS_ADE_DEBUG_LIST}  ${CONAN_CXX_FLAGS_ADE_DEBUG_LIST}>)
+
+
+    set(_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES "${CONAN_SYSTEM_LIBS_LIBCURL} ${CONAN_FRAMEWORKS_FOUND_LIBCURL} CONAN_PKG::openssl CONAN_PKG::zlib")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES "${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_LIBCURL}" "${CONAN_LIB_DIRS_LIBCURL}"
+                                  CONAN_PACKAGE_TARGETS_LIBCURL "${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES}"
+                                  "" libcurl)
+    set(_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_DEBUG "${CONAN_SYSTEM_LIBS_LIBCURL_DEBUG} ${CONAN_FRAMEWORKS_FOUND_LIBCURL_DEBUG} CONAN_PKG::openssl CONAN_PKG::zlib")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_DEBUG "${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_DEBUG}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_LIBCURL_DEBUG}" "${CONAN_LIB_DIRS_LIBCURL_DEBUG}"
+                                  CONAN_PACKAGE_TARGETS_LIBCURL_DEBUG "${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_DEBUG}"
+                                  "debug" libcurl)
+    set(_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_RELEASE "${CONAN_SYSTEM_LIBS_LIBCURL_RELEASE} ${CONAN_FRAMEWORKS_FOUND_LIBCURL_RELEASE} CONAN_PKG::openssl CONAN_PKG::zlib")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_RELEASE "${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_RELEASE}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_LIBCURL_RELEASE}" "${CONAN_LIB_DIRS_LIBCURL_RELEASE}"
+                                  CONAN_PACKAGE_TARGETS_LIBCURL_RELEASE "${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_RELEASE}"
+                                  "release" libcurl)
+    set(_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_RELWITHDEBINFO "${CONAN_SYSTEM_LIBS_LIBCURL_RELWITHDEBINFO} ${CONAN_FRAMEWORKS_FOUND_LIBCURL_RELWITHDEBINFO} CONAN_PKG::openssl CONAN_PKG::zlib")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_RELWITHDEBINFO "${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_RELWITHDEBINFO}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_LIBCURL_RELWITHDEBINFO}" "${CONAN_LIB_DIRS_LIBCURL_RELWITHDEBINFO}"
+                                  CONAN_PACKAGE_TARGETS_LIBCURL_RELWITHDEBINFO "${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_RELWITHDEBINFO}"
+                                  "relwithdebinfo" libcurl)
+    set(_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_MINSIZEREL "${CONAN_SYSTEM_LIBS_LIBCURL_MINSIZEREL} ${CONAN_FRAMEWORKS_FOUND_LIBCURL_MINSIZEREL} CONAN_PKG::openssl CONAN_PKG::zlib")
+    string(REPLACE " " ";" _CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_MINSIZEREL "${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_MINSIZEREL}")
+    conan_package_library_targets("${CONAN_PKG_LIBS_LIBCURL_MINSIZEREL}" "${CONAN_LIB_DIRS_LIBCURL_MINSIZEREL}"
+                                  CONAN_PACKAGE_TARGETS_LIBCURL_MINSIZEREL "${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_MINSIZEREL}"
+                                  "minsizerel" libcurl)
+
+    add_library(CONAN_PKG::libcurl INTERFACE IMPORTED)
+
+    # Property INTERFACE_LINK_FLAGS do not work, necessary to add to INTERFACE_LINK_LIBRARIES
+    set_property(TARGET CONAN_PKG::libcurl PROPERTY INTERFACE_LINK_LIBRARIES ${CONAN_PACKAGE_TARGETS_LIBCURL} ${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_LIBCURL_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_LIBCURL_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_LIBCURL_LIST}>
+
+                                                                 $<$<CONFIG:Release>:${CONAN_PACKAGE_TARGETS_LIBCURL_RELEASE} ${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_RELEASE}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_LIBCURL_RELEASE_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_LIBCURL_RELEASE_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_LIBCURL_RELEASE_LIST}>>
+
+                                                                 $<$<CONFIG:RelWithDebInfo>:${CONAN_PACKAGE_TARGETS_LIBCURL_RELWITHDEBINFO} ${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_RELWITHDEBINFO}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_LIBCURL_RELWITHDEBINFO_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_LIBCURL_RELWITHDEBINFO_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_LIBCURL_RELWITHDEBINFO_LIST}>>
+
+                                                                 $<$<CONFIG:MinSizeRel>:${CONAN_PACKAGE_TARGETS_LIBCURL_MINSIZEREL} ${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_MINSIZEREL}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_LIBCURL_MINSIZEREL_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_LIBCURL_MINSIZEREL_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_LIBCURL_MINSIZEREL_LIST}>>
+
+                                                                 $<$<CONFIG:Debug>:${CONAN_PACKAGE_TARGETS_LIBCURL_DEBUG} ${_CONAN_PKG_LIBS_LIBCURL_DEPENDENCIES_DEBUG}
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,SHARED_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_LIBCURL_DEBUG_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,MODULE_LIBRARY>:${CONAN_SHARED_LINKER_FLAGS_LIBCURL_DEBUG_LIST}>
+                                                                 $<$<STREQUAL:$<TARGET_PROPERTY:TYPE>,EXECUTABLE>:${CONAN_EXE_LINKER_FLAGS_LIBCURL_DEBUG_LIST}>>)
+    set_property(TARGET CONAN_PKG::libcurl PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${CONAN_INCLUDE_DIRS_LIBCURL}
+                                                                      $<$<CONFIG:Release>:${CONAN_INCLUDE_DIRS_LIBCURL_RELEASE}>
+                                                                      $<$<CONFIG:RelWithDebInfo>:${CONAN_INCLUDE_DIRS_LIBCURL_RELWITHDEBINFO}>
+                                                                      $<$<CONFIG:MinSizeRel>:${CONAN_INCLUDE_DIRS_LIBCURL_MINSIZEREL}>
+                                                                      $<$<CONFIG:Debug>:${CONAN_INCLUDE_DIRS_LIBCURL_DEBUG}>)
+    set_property(TARGET CONAN_PKG::libcurl PROPERTY INTERFACE_COMPILE_DEFINITIONS ${CONAN_COMPILE_DEFINITIONS_LIBCURL}
+                                                                      $<$<CONFIG:Release>:${CONAN_COMPILE_DEFINITIONS_LIBCURL_RELEASE}>
+                                                                      $<$<CONFIG:RelWithDebInfo>:${CONAN_COMPILE_DEFINITIONS_LIBCURL_RELWITHDEBINFO}>
+                                                                      $<$<CONFIG:MinSizeRel>:${CONAN_COMPILE_DEFINITIONS_LIBCURL_MINSIZEREL}>
+                                                                      $<$<CONFIG:Debug>:${CONAN_COMPILE_DEFINITIONS_LIBCURL_DEBUG}>)
+    set_property(TARGET CONAN_PKG::libcurl PROPERTY INTERFACE_COMPILE_OPTIONS ${CONAN_C_FLAGS_LIBCURL_LIST} ${CONAN_CXX_FLAGS_LIBCURL_LIST}
+                                                                  $<$<CONFIG:Release>:${CONAN_C_FLAGS_LIBCURL_RELEASE_LIST} ${CONAN_CXX_FLAGS_LIBCURL_RELEASE_LIST}>
+                                                                  $<$<CONFIG:RelWithDebInfo>:${CONAN_C_FLAGS_LIBCURL_RELWITHDEBINFO_LIST} ${CONAN_CXX_FLAGS_LIBCURL_RELWITHDEBINFO_LIST}>
+                                                                  $<$<CONFIG:MinSizeRel>:${CONAN_C_FLAGS_LIBCURL_MINSIZEREL_LIST} ${CONAN_CXX_FLAGS_LIBCURL_MINSIZEREL_LIST}>
+                                                                  $<$<CONFIG:Debug>:${CONAN_C_FLAGS_LIBCURL_DEBUG_LIST}  ${CONAN_CXX_FLAGS_LIBCURL_DEBUG_LIST}>)
 
 
     set(_CONAN_PKG_LIBS_LIBJPEG_DEPENDENCIES "${CONAN_SYSTEM_LIBS_LIBJPEG} ${CONAN_FRAMEWORKS_FOUND_LIBJPEG} ")
@@ -4439,7 +4662,7 @@ macro(conan_define_targets)
                                                                   $<$<CONFIG:MinSizeRel>:${CONAN_C_FLAGS_M4_MINSIZEREL_LIST} ${CONAN_CXX_FLAGS_M4_MINSIZEREL_LIST}>
                                                                   $<$<CONFIG:Debug>:${CONAN_C_FLAGS_M4_DEBUG_LIST}  ${CONAN_CXX_FLAGS_M4_DEBUG_LIST}>)
 
-    set(CONAN_TARGETS CONAN_PKG::fmt CONAN_PKG::opencv CONAN_PKG::jasper CONAN_PKG::openexr CONAN_PKG::eigen CONAN_PKG::ffmpeg CONAN_PKG::quirc CONAN_PKG::protobuf CONAN_PKG::ade CONAN_PKG::libjpeg CONAN_PKG::imath CONAN_PKG::xz_utils CONAN_PKG::freetype CONAN_PKG::openjpeg CONAN_PKG::openh264 CONAN_PKG::libx264 CONAN_PKG::libx265 CONAN_PKG::libvpx CONAN_PKG::libmp3lame CONAN_PKG::libfdk_aac CONAN_PKG::libwebp CONAN_PKG::pulseaudio CONAN_PKG::libpng CONAN_PKG::bzip2 CONAN_PKG::libiconv CONAN_PKG::brotli CONAN_PKG::openssl CONAN_PKG::libalsa CONAN_PKG::libsndfile CONAN_PKG::libcap CONAN_PKG::libtool CONAN_PKG::zlib CONAN_PKG::vorbis CONAN_PKG::opus CONAN_PKG::flac CONAN_PKG::automake CONAN_PKG::ogg CONAN_PKG::autoconf CONAN_PKG::m4)
+    set(CONAN_TARGETS CONAN_PKG::fmt CONAN_PKG::opencv CONAN_PKG::cocoyaxi CONAN_PKG::jasper CONAN_PKG::openexr CONAN_PKG::eigen CONAN_PKG::ffmpeg CONAN_PKG::quirc CONAN_PKG::protobuf CONAN_PKG::ade CONAN_PKG::libcurl CONAN_PKG::libjpeg CONAN_PKG::imath CONAN_PKG::xz_utils CONAN_PKG::freetype CONAN_PKG::openjpeg CONAN_PKG::openh264 CONAN_PKG::libx264 CONAN_PKG::libx265 CONAN_PKG::libvpx CONAN_PKG::libmp3lame CONAN_PKG::libfdk_aac CONAN_PKG::libwebp CONAN_PKG::pulseaudio CONAN_PKG::libpng CONAN_PKG::bzip2 CONAN_PKG::libiconv CONAN_PKG::brotli CONAN_PKG::openssl CONAN_PKG::libalsa CONAN_PKG::libsndfile CONAN_PKG::libcap CONAN_PKG::libtool CONAN_PKG::zlib CONAN_PKG::vorbis CONAN_PKG::opus CONAN_PKG::flac CONAN_PKG::automake CONAN_PKG::ogg CONAN_PKG::autoconf CONAN_PKG::m4)
 
 endmacro()
 

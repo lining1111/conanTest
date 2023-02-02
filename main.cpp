@@ -4,6 +4,8 @@
 #include "opencv2/core.hpp" /*包含库的核心功能*/
 #include <opencv2/imgproc.hpp> /*包括主要的图像处理函数*/
 #include <opencv2/highgui.hpp> /*提供了读写图像和视频的函数以及一些用户交互函数*/
+#include <thread>
+#include "co/all.h"
 
 int execute_command(const std::string &command, std::string *output = nullptr,
                     bool redirect_stderr = false) {
@@ -52,14 +54,26 @@ Mat image_show(const char *image_path) {
 
 int main() {
     printf("%s\n", CV_VERSION);
-    image_show("./1.jpeg");
-    std::string shell_command = {" /etc/passwd"};
-
-    std::string output;
-    if ((execute_command(fmt::format("cat {0} 2>/dev/null", shell_command), &output)) == 0) {
-        printf("%s\n", output.c_str());
+//    image_show("./1.jpeg");
+//    std::string shell_command = {" /etc/passwd"};
+//
+//    std::string output;
+//    if ((execute_command(fmt::format("cat {0} 2>/dev/null", shell_command), &output)) == 0) {
+//        printf("%s\n", output.c_str());
+//    }
+    FLG_cout = true;
+    co::WaitGroup wg;
+    wg.add(8);
+    int count = 0;
+    for (int i = 0; i < 8; ++i) {
+        go([&]() {
+            LOG << "co: " << co::coroutine_id() << count;
+            count++;
+            wg.done();
+        });
     }
 
+    wg.wait();
     std::cout << "Hello, World!" << std::endl;
     return 0;
 }

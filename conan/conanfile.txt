@@ -1,7 +1,12 @@
 [requires]
 fmt/9.1.0
 opencv/4.5.5
+openssl/1.1.1s
+cocoyaxi/2.0.3
 [options]
+#cocoyaxi:shared=True
+cocoyaxi:with_libcurl=True
+cocoyaxi:with_openssl=True
 vulkan-loader:with_wsi_xlib=False
 pulseaudio:with_x11=False
 libx264:disable_asm=True
