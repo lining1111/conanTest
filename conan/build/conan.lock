@@ -382,60 +382,11 @@
     "options": "fPIC=True\nshared=False\nwith_brotli=False\nwith_c_ares=False\nwith_ca_bundle=auto\nwith_ca_path=auto\nwith_cookies=True\nwith_crypto_auth=True\nwith_dict=True\nwith_docs=False\nwith_file=True\nwith_ftp=True\nwith_gopher=True\nwith_http=True\nwith_imap=True\nwith_ipv6=True\nwith_largemaxwritesize=False\nwith_ldap=False\nwith_libgsasl=False\nwith_libidn=False\nwith_libpsl=False\nwith_librtmp=False\nwith_libssh2=False\nwith_mqtt=True\nwith_nghttp2=False\nwith_ntlm=True\nwith_ntlm_wb=True\nwith_pop3=True\nwith_proxy=True\nwith_rtsp=True\nwith_smb=True\nwith_smtp=True\nwith_ssl=openssl\nwith_symbol_hiding=False\nwith_telnet=True\nwith_tftp=True\nwith_threaded_resolver=True\nwith_unix_sockets=True\nwith_verbose_debug=True\nwith_verbose_strings=True\nwith_zlib=True\nwith_zstd=False\nopenssl:386=False\nopenssl:enable_weak_ssl_ciphers=False\nopenssl:fPIC=True\nopenssl:no_aria=False\nopenssl:no_asm=False\nopenssl:no_async=False\nopenssl:no_bf=False\nopenssl:no_blake2=False\nopenssl:no_camellia=False\nopenssl:no_cast=False\nopenssl:no_chacha=False\nopenssl:no_cms=False\nopenssl:no_comp=False\nopenssl:no_ct=False\nopenssl:no_deprecated=False\nopenssl:no_des=False\nopenssl:no_dgram=False\nopenssl:no_dh=False\nopenssl:no_dsa=False\nopenssl:no_dso=False\nopenssl:no_ec=False\nopenssl:no_ecdh=False\nopenssl:no_ecdsa=False\nopenssl:no_engine=False\nopenssl:no_filenames=False\nopenssl:no_gost=False\nopenssl:no_hmac=False\nopenssl:no_idea=False\nopenssl:no_md4=False\nopenssl:no_md5=False\nopenssl:no_mdc2=False\nopenssl:no_ocsp=False\nopenssl:no_pinshared=False\nopenssl:no_rc2=False\nopenssl:no_rfc3779=False\nopenssl:no_rmd160=False\nopenssl:no_rsa=False\nopenssl:no_seed=False\nopenssl:no_sha=False\nopenssl:no_sm2=False\nopenssl:no_sm3=False\nopenssl:no_sm4=False\nopenssl:no_sock=False\nopenssl:no_srp=False\nopenssl:no_srtp=False\nopenssl:no_sse2=False\nopenssl:no_ssl=False\nopenssl:no_ssl3=False\nopenssl:no_stdio=False\nopenssl:no_tests=False\nopenssl:no_threads=False\nopenssl:no_tls1=False\nopenssl:no_ts=False\nopenssl:no_whirlpool=False\nopenssl:openssldir=None\nopenssl:shared=False\nzlib:fPIC=True\nzlib:shared=False",
     "package_id": "ec07ffc6b9a13e2918f79000a98371cd6062b944",
     "prev": "0",
-    "modified": true,
     "requires": [
      "27",
      "3"
     ],
-    "build_requires": [
-     "42",
-     "46"
-    ],
     "context": "host"
-   },
-   "42": {
-    "ref": "libtool/2.4.7",
-    "options": "fPIC=True\nshared=False",
-    "package_id": "1f3b4f5ab48004264e29560e3e2f71863d383ab8",
-    "prev": "0",
-    "requires": [
-     "43"
-    ],
-    "context": "build"
-   },
-   "43": {
-    "ref": "automake/1.16.5",
-    "options": "",
-    "package_id": "258f6f05ca54813b3d7180161753df7f9ccf7e1d",
-    "prev": "0",
-    "requires": [
-     "44"
-    ],
-    "context": "build"
-   },
-   "44": {
-    "ref": "autoconf/2.71",
-    "options": "",
-    "package_id": "5ab84d6acfe1f23c4fae0ab88f26e3a396351ac9",
-    "prev": "0",
-    "requires": [
-     "45"
-    ],
-    "context": "build"
-   },
-   "45": {
-    "ref": "m4/1.4.19",
-    "options": "",
-    "package_id": "24647d9fe8ec489125dfbae4b3ebefaf7581674c",
-    "prev": "0",
-    "context": "build"
-   },
-   "46": {
-    "ref": "pkgconf/1.9.3",
-    "options": "enable_lib=False",
-    "package_id": "24647d9fe8ec489125dfbae4b3ebefaf7581674c",
-    "prev": "0",
-    "context": "build"
    }
   },
   "revisions_enabled": false

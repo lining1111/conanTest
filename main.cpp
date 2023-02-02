@@ -61,13 +61,12 @@ int main() {
 //    if ((execute_command(fmt::format("cat {0} 2>/dev/null", shell_command), &output)) == 0) {
 //        printf("%s\n", output.c_str());
 //    }
-    FLG_cout = true;
     co::WaitGroup wg;
     wg.add(8);
     int count = 0;
     for (int i = 0; i < 8; ++i) {
         go([&]() {
-            LOG << "co: " << co::coroutine_id() << count;
+            std::cout << "co: " << co::coroutine_id() << count<<std::endl;
             count++;
             wg.done();
         });
