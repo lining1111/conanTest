@@ -61,18 +61,52 @@ int main() {
 //    if ((execute_command(fmt::format("cat {0} 2>/dev/null", shell_command), &output)) == 0) {
 //        printf("%s\n", output.c_str());
 //    }
-    co::WaitGroup wg;
-    wg.add(8);
-    int count = 0;
-    for (int i = 0; i < 8; ++i) {
-        go([&]() {
-            std::cout << "co: " << co::coroutine_id() << count<<std::endl;
-            count++;
-            wg.done();
-        });
+//    co::WaitGroup wg;
+//    wg.add(8);
+//    int count = 0;
+//    for (int i = 0; i < 8; ++i) {
+//        go([&]() {
+//            std::cout << "co: " << co::coroutine_id() << count<<std::endl;
+//            count++;
+//            wg.done();
+//        });
+//    }
+//
+//    wg.wait();
+    FLG_cout = true;
+    std::cout << "Hello, World!" << std::endl;
+    int a = 0;
+    auto on_connection = [&](tcp::Connection conn) {
+        char buf[8] = {0};
+
+        while (true) {
+            int r = conn.recv(buf, 8);
+            if (r == 0) {         /* client close the connection */
+                conn.close();
+                break;
+            } else if (r < 0) { /* error */
+                conn.reset(3000);
+                break;
+            } else {
+                std::cout << "server recv " << fastring(buf, r) << std::endl;
+                a++;
+                std::cout << a << std::endl;
+                LOG << "server send pong";
+                r = conn.send("pong", 4);
+                if (r <= 0) {
+                    LOG << "server send error: " << conn.strerror();
+                    conn.reset(3000);
+                    break;
+                }
+            }
+        }
+    };
+    tcp::Server s;
+    s.on_connection(on_connection);
+    s.start("::", 9000);
+    while (1) {
+        co::sleep(1000);
     }
 
-    wg.wait();
-    std::cout << "Hello, World!" << std::endl;
     return 0;
 }
